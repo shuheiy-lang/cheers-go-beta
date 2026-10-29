@@ -1,0 +1,12 @@
+{
+  "title": "貿易の道しるべ",
+  "milestones": [
+    {"id": "research", "kind": "step", "icon": "🔎", "title": "リサーチ", "desc": "輸出先市場の需要・競合・単価を調べ、卸業者の候補を見つける。"},
+    {"id": "product", "kind": "step", "icon": "📦", "title": "商品選択", "desc": "グレード・MOQ（最低注文量）を踏まえて、自分が扱う商品を決める。"},
+    {"id": "sales_strategy", "kind": "step", "icon": "🎯", "title": "セールス戦略", "desc": "相手に頭を使わせないリード型の提案・交渉のやり方を決める。"},
+    {"id": "sales_page", "kind": "step", "icon": "🛒", "title": "販売ページ", "desc": "英語の商品説明文・提案文を1本作り、AIに添削してもらう。"},
+    {"id": "traffic", "kind": "step", "icon": "📣", "title": "集客", "desc": "DM・メールで新規開拓をはじめる（パーソナライズして送る）。"},
+    {"id": "zoom_deal", "kind": "step", "icon": "🤝", "title": "Zoom商談", "desc": "Zoomでの商談・プレゼンのロールプレイを行う。"},
+    {"id": "trade_ops", "kind": "step", "icon": "🚢", "title": "貿易実務", "desc": "一人で貿易実務（インボイス・配送・通関など）を回せるようになる。"}
+  ]
+}

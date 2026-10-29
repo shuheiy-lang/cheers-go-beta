@@ -1,0 +1,40 @@
+{
+  "_note": "ごほうび宝箱（docs/gamify-1027.md「3」）。先生の一言15本・Tip15本（貿易8・英語7）・ai_time文言1本。全項目 draft:true・text先頭に「DRAFT: Shuheyの確認待ち」（最終承認前）。先生の一言は実在の先生個人の発言として書かず、名前を付けない一般的な励ましに統一（teacher は全件「先生」の汎用表記）。差し替えは、この配列の該当項目を直すだけでよい（コード変更なし）。",
+  "weights": {"teacher": 60, "tip": 35, "ai_time": 5},
+  "ai_time_min": 3,
+  "ai_time": {"draft": true, "text": "DRAFT: Shuheyの確認待ち――今週のAI会話が ＋{min}分 増えました！がんばった分だけ、話せる時間も増えていきます。"},
+  "teacher_lines": [
+    {"id": "t1", "teacher": "先生", "draft": true, "text": "DRAFT: Shuheyの確認待ち――今日も1つ、続けられましたね。その積み重ねが、ちゃんと力になっています。"},
+    {"id": "t2", "teacher": "先生", "draft": true, "text": "DRAFT: Shuheyの確認待ち――完璧じゃなくていいんです。今日やったこと、それがいちばん大事。"},
+    {"id": "t3", "teacher": "先生", "draft": true, "text": "DRAFT: Shuheyの確認待ち――続けている人にしか見えない景色があります。もう少しで見えてきますよ。"},
+    {"id": "t4", "teacher": "先生", "draft": true, "text": "DRAFT: Shuheyの確認待ち――今日のあなたは、積み重ねた分だけ前に進んでいます。焦らず、そのままで。"},
+    {"id": "t5", "teacher": "先生", "draft": true, "text": "DRAFT: Shuheyの確認待ち――小さな1つを選んだこと、それ自体がもう前進です。お疲れさまでした。"},
+    {"id": "t6", "teacher": "先生", "draft": true, "text": "DRAFT: Shuheyの確認待ち――毎日じゃなくても大丈夫。今日ここに戻ってきたことを、まず自分でほめてください。"},
+    {"id": "t7", "teacher": "先生", "draft": true, "text": "DRAFT: Shuheyの確認待ち――できなかった日があっても、それは失敗じゃありません。また始めればいいんです。"},
+    {"id": "t8", "teacher": "先生", "draft": true, "text": "DRAFT: Shuheyの確認待ち――「わかる」と「できる」の間には時間がかかります。今はその途中、それでいいんです。"},
+    {"id": "t9", "teacher": "先生", "draft": true, "text": "DRAFT: Shuheyの確認待ち――誰かと比べなくていい。1週間前の自分と比べて、今日はどうですか？"},
+    {"id": "t10", "teacher": "先生", "draft": true, "text": "DRAFT: Shuheyの確認待ち――続けることそのものが、才能よりずっと大きな力になります。"},
+    {"id": "t11", "teacher": "先生", "draft": true, "text": "DRAFT: Shuheyの確認待ち――今日もここまで来られました。その一歩を、ちゃんと認めてあげてください。"},
+    {"id": "t12", "teacher": "先生", "draft": true, "text": "DRAFT: Shuheyの確認待ち――うまく言えなかった日も、挑戦した証です。次はきっと、もう少し言えます。"},
+    {"id": "t13", "teacher": "先生", "draft": true, "text": "DRAFT: Shuheyの確認待ち――焦らなくて大丈夫。言葉は、使うたびに少しずつ自分のものになっていきます。"},
+    {"id": "t14", "teacher": "先生", "draft": true, "text": "DRAFT: Shuheyの確認待ち――今日の「できた」を、小さくても見つけてあげてください。それが次への力になります。"},
+    {"id": "t15", "teacher": "先生", "draft": true, "text": "DRAFT: Shuheyの確認待ち――ここまで続けてきたこと、それ自体がもう立派な実力です。"}
+  ],
+  "tips": [
+    {"id": "p1", "cat": "trade", "draft": true, "text": "DRAFT: Shuheyの確認待ち――貿易Tip：FOB（Free On Board）＝輸出港で船に荷物を積んだ時点で、売り手の責任・費用負担が買い手に移る条件です。"},
+    {"id": "p2", "cat": "trade", "draft": true, "text": "DRAFT: Shuheyの確認待ち――貿易Tip：CIF（Cost, Insurance and Freight）＝売り手が輸入港までの運賃と保険料を負担する条件。ただし荷物の危険（リスク）は、FOBと同じく輸出港で本船に積んだ時点で買い手に移ります。"},
+    {"id": "p3", "cat": "trade", "draft": true, "text": "DRAFT: Shuheyの確認待ち――貿易Tip：EXW（Ex Works）＝売り手の工場・倉庫で荷物を渡すだけの条件。そこから先の輸送・保険・手続きはすべて買い手の負担になります。"},
+    {"id": "p4", "cat": "trade", "draft": true, "text": "DRAFT: Shuheyの確認待ち――貿易Tip：L/C（信用状）＝銀行が支払いを保証してくれる仕組み。初めての取引先と大きな金額を扱うときによく使われます。"},
+    {"id": "p5", "cat": "trade", "draft": true, "text": "DRAFT: Shuheyの確認待ち――貿易Tip：HSコード＝世界共通の商品分類番号。関税の額や輸出入の規制を調べるときに使う、商品の「背番号」のようなものです。"},
+    {"id": "p6", "cat": "trade", "draft": true, "text": "DRAFT: Shuheyの確認待ち――貿易Tip：B/L（船荷証券）＝船会社が発行する荷物の預かり証。荷物を受け取る権利そのものを示す大事な証券です。"},
+    {"id": "p7", "cat": "trade", "draft": true, "text": "DRAFT: Shuheyの確認待ち――貿易Tip：初めてのやり取りでは、金額より先に「数量・納期・支払い条件」をそろえて聞くと話がスムーズに進みます。"},
+    {"id": "p8", "cat": "trade", "draft": true, "text": "DRAFT: Shuheyの確認待ち――貿易Tip：サンプルを依頼するときは、配送方法（航空便か船便か）まで先に伝えておくと、あとの手戻りが減ります。"},
+    {"id": "p9", "cat": "english", "draft": true, "text": "DRAFT: Shuheyの確認待ち――英語Tip：「I think so.」の代わりに「I'd say so.」を使うと、少し柔らかく自分の意見を伝えられます。"},
+    {"id": "p10", "cat": "english", "draft": true, "text": "DRAFT: Shuheyの確認待ち――英語Tip：相手の話に「That makes sense.」と返すだけで、会話のテンポがぐっと良くなります。"},
+    {"id": "p11", "cat": "english", "draft": true, "text": "DRAFT: Shuheyの確認待ち――英語Tip：聞き取れなかったときは「Could you say that again?」。何度でも聞き直して大丈夫です。"},
+    {"id": "p12", "cat": "english", "draft": true, "text": "DRAFT: Shuheyの確認待ち――英語Tip：つまった時の「Let me think for a second.」は、立派な1フレーズ。無言よりずっと伝わります。"},
+    {"id": "p13", "cat": "english", "draft": true, "text": "DRAFT: Shuheyの確認待ち――英語Tip：ビジネスメールの書き出しは「I hope this email finds you well.」が定番の丁寧な一文です。"},
+    {"id": "p14", "cat": "english", "draft": true, "text": "DRAFT: Shuheyの確認待ち――英語Tip：お礼を伝えるときは「Thank you for your prompt reply.」のように、何に感謝しているかを添えると丁寧に伝わります。"},
+    {"id": "p15", "cat": "english", "draft": true, "text": "DRAFT: Shuheyの確認待ち――英語Tip：価格交渉では「Is there any flexibility on the price if we increase the order quantity?」（数量を増やせば価格の余地はありますか）のように、条件をセットで伝えると検討してもらいやすくなります。"}
+  ]
+}
