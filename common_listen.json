@@ -1,0 +1,1010 @@
+{
+ "_note": "共通レッスン（ながら耳トレ・機能5v3）。全会員が使える固定5本（オーダーメイド教材=kz-mineとは別）。音声は app/common_listen/<id>.m4a（Grok TTS・声 ara 生成・git管理・個人情報なし）。segments は <audio> の再生位置（秒）に対応するキャプション（type: intro|listen|shadow|outro）。差し替えは tools/common_listen_gen.py の LESSONS を直して再実行するだけでよい（コード変更なし）。",
+ "lessons": [
+  {
+   "id": "contact",
+   "title": "①仕入れ先への初回コンタクト",
+   "topic": "貿易・英語",
+   "src": "common_listen/contact.m4a",
+   "dur": 650.3,
+   "segments": [
+    {
+     "t": 0.0,
+     "type": "intro",
+     "en": "",
+     "ja": "仕入れ先への初めての連絡で使うフレーズを練習します。英語を聞いて、日本語の意味を確認したら、同じように声に出してみましょう。"
+    },
+    {
+     "t": 10.84,
+     "type": "listen",
+     "en": "I'm writing to inquire about your products.",
+     "ja": "御社の製品についてお伺いしたくご連絡しました。"
+    },
+    {
+     "t": 18.85,
+     "type": "shadow",
+     "en": "I'm writing to inquire about your products.",
+     "ja": "御社の製品についてお伺いしたくご連絡しました。"
+    },
+    {
+     "t": 54.21,
+     "type": "listen",
+     "en": "We found your company through a trade show.",
+     "ja": "御社のことは展示会で知りました。"
+    },
+    {
+     "t": 60.94,
+     "type": "shadow",
+     "en": "We found your company through a trade show.",
+     "ja": "御社のことは展示会で知りました。"
+    },
+    {
+     "t": 95.37,
+     "type": "listen",
+     "en": "Could you send me your product catalog and price list?",
+     "ja": "製品カタログと価格表をお送りいただけますか。"
+    },
+    {
+     "t": 103.35,
+     "type": "shadow",
+     "en": "Could you send me your product catalog and price list?",
+     "ja": "製品カタログと価格表をお送りいただけますか。"
+    },
+    {
+     "t": 139.58,
+     "type": "listen",
+     "en": "We are a small importer based in Japan.",
+     "ja": "私たちは日本の小さな輸入業者です。"
+    },
+    {
+     "t": 146.93,
+     "type": "shadow",
+     "en": "We are a small importer based in Japan.",
+     "ja": "私たちは日本の小さな輸入業者です。"
+    },
+    {
+     "t": 182.3,
+     "type": "listen",
+     "en": "What is your minimum order quantity?",
+     "ja": "最低発注数量はどれくらいですか。"
+    },
+    {
+     "t": 188.74,
+     "type": "shadow",
+     "en": "What is your minimum order quantity?",
+     "ja": "最低発注数量はどれくらいですか。"
+    },
+    {
+     "t": 222.31,
+     "type": "listen",
+     "en": "Do you offer O E M or private label service?",
+     "ja": "OEMやプライベートブランドの対応は可能ですか。"
+    },
+    {
+     "t": 231.2,
+     "type": "shadow",
+     "en": "Do you offer O E M or private label service?",
+     "ja": "OEMやプライベートブランドの対応は可能ですか。"
+    },
+    {
+     "t": 268.29,
+     "type": "listen",
+     "en": "Could you tell me your main export markets?",
+     "ja": "主な輸出先の国を教えていただけますか。"
+    },
+    {
+     "t": 275.65,
+     "type": "shadow",
+     "en": "Could you tell me your main export markets?",
+     "ja": "主な輸出先の国を教えていただけますか。"
+    },
+    {
+     "t": 311.01,
+     "type": "listen",
+     "en": "We'd like to start with a small trial order.",
+     "ja": "まずは小ロットの試験発注から始めたいです。"
+    },
+    {
+     "t": 318.71,
+     "type": "shadow",
+     "en": "We'd like to start with a small trial order.",
+     "ja": "まずは小ロットの試験発注から始めたいです。"
+    },
+    {
+     "t": 354.08,
+     "type": "listen",
+     "en": "Please let me know your payment terms.",
+     "ja": "お支払い条件を教えてください。"
+    },
+    {
+     "t": 360.49,
+     "type": "shadow",
+     "en": "Please let me know your payment terms.",
+     "ja": "お支払い条件を教えてください。"
+    },
+    {
+     "t": 394.92,
+     "type": "listen",
+     "en": "I look forward to hearing from you soon.",
+     "ja": "近いうちにお返事いただけるのを楽しみにしています。"
+    },
+    {
+     "t": 402.3,
+     "type": "shadow",
+     "en": "I look forward to hearing from you soon.",
+     "ja": "近いうちにお返事いただけるのを楽しみにしています。"
+    },
+    {
+     "t": 436.72,
+     "type": "listen",
+     "en": "Thank you for your quick reply.",
+     "ja": "早速のご返信ありがとうございます。"
+    },
+    {
+     "t": 443.16,
+     "type": "shadow",
+     "en": "Thank you for your quick reply.",
+     "ja": "早速のご返信ありがとうございます。"
+    },
+    {
+     "t": 476.73,
+     "type": "listen",
+     "en": "Could we schedule a video call next week?",
+     "ja": "来週オンラインで打ち合わせできますか。"
+    },
+    {
+     "t": 483.46,
+     "type": "shadow",
+     "en": "Could we schedule a video call next week?",
+     "ja": "来週オンラインで打ち合わせできますか。"
+    },
+    {
+     "t": 517.88,
+     "type": "listen",
+     "en": "I'm attaching our company profile for your reference.",
+     "ja": "ご参考に弊社の会社概要を添付します。"
+    },
+    {
+     "t": 526.18,
+     "type": "shadow",
+     "en": "I'm attaching our company profile for your reference.",
+     "ja": "ご参考に弊社の会社概要を添付します。"
+    },
+    {
+     "t": 562.41,
+     "type": "listen",
+     "en": "We're looking for a long-term business partner.",
+     "ja": "長期的なお取引先を探しています。"
+    },
+    {
+     "t": 569.45,
+     "type": "shadow",
+     "en": "We're looking for a long-term business partner.",
+     "ja": "長期的なお取引先を探しています。"
+    },
+    {
+     "t": 604.81,
+     "type": "listen",
+     "en": "Looking forward to working with you.",
+     "ja": "一緒にお仕事できるのを楽しみにしています。"
+    },
+    {
+     "t": 611.57,
+     "type": "shadow",
+     "en": "Looking forward to working with you.",
+     "ja": "一緒にお仕事できるのを楽しみにしています。"
+    },
+    {
+     "t": 646.13,
+     "type": "outro",
+     "en": "",
+     "ja": "お疲れさまでした。初回コンタクトのレッスンはこれで終わりです。"
+    }
+   ]
+  },
+  {
+   "id": "negotiation",
+   "title": "②価格交渉",
+   "topic": "貿易・英語",
+   "src": "common_listen/negotiation.m4a",
+   "dur": 645.4,
+   "segments": [
+    {
+     "t": 0.0,
+     "type": "intro",
+     "en": "",
+     "ja": "価格交渉で使うフレーズを練習します。英語を聞いて、日本語の意味を確認したら、同じように声に出してみましょう。"
+    },
+    {
+     "t": 9.22,
+     "type": "listen",
+     "en": "Your price is a bit higher than we expected.",
+     "ja": "想定より価格が少し高いです。"
+    },
+    {
+     "t": 16.26,
+     "type": "shadow",
+     "en": "Your price is a bit higher than we expected.",
+     "ja": "想定より価格が少し高いです。"
+    },
+    {
+     "t": 51.63,
+     "type": "listen",
+     "en": "Could you offer a better price for a larger order?",
+     "ja": "大口注文の場合、もう少し値下げいただけますか。"
+    },
+    {
+     "t": 59.95,
+     "type": "shadow",
+     "en": "Could you offer a better price for a larger order?",
+     "ja": "大口注文の場合、もう少し値下げいただけますか。"
+    },
+    {
+     "t": 95.32,
+     "type": "listen",
+     "en": "What's the best price you can offer for five hundred units?",
+     "ja": "500個の場合の最安価格はいくらですか。"
+    },
+    {
+     "t": 103.59,
+     "type": "shadow",
+     "en": "What's the best price you can offer for five hundred units?",
+     "ja": "500個の場合の最安価格はいくらですか。"
+    },
+    {
+     "t": 140.68,
+     "type": "listen",
+     "en": "If we order one thousand pieces, can you give us a discount?",
+     "ja": "1,000個発注したら割引はありますか。"
+    },
+    {
+     "t": 148.61,
+     "type": "shadow",
+     "en": "If we order one thousand pieces, can you give us a discount?",
+     "ja": "1,000個発注したら割引はありますか。"
+    },
+    {
+     "t": 186.64,
+     "type": "listen",
+     "en": "Can we meet in the middle?",
+     "ja": "お互い折り合える価格はありますか。"
+    },
+    {
+     "t": 192.48,
+     "type": "shadow",
+     "en": "Can we meet in the middle?",
+     "ja": "お互い折り合える価格はありますか。"
+    },
+    {
+     "t": 224.24,
+     "type": "listen",
+     "en": "That price works for us.",
+     "ja": "その価格で大丈夫です。"
+    },
+    {
+     "t": 229.76,
+     "type": "shadow",
+     "en": "That price works for us.",
+     "ja": "その価格で大丈夫です。"
+    },
+    {
+     "t": 262.47,
+     "type": "listen",
+     "en": "Is this price F O B or C I F?",
+     "ja": "この価格はFOBですかCIFですか。"
+    },
+    {
+     "t": 270.48,
+     "type": "shadow",
+     "en": "Is this price F O B or C I F?",
+     "ja": "この価格はFOBですかCIFですか。"
+    },
+    {
+     "t": 305.84,
+     "type": "listen",
+     "en": "We need a five percent discount to make this work.",
+     "ja": "成立させるには5%の値引きが必要です。"
+    },
+    {
+     "t": 313.85,
+     "type": "shadow",
+     "en": "We need a five percent discount to make this work.",
+     "ja": "成立させるには5%の値引きが必要です。"
+    },
+    {
+     "t": 349.22,
+     "type": "listen",
+     "en": "Let's agree on eight dollars per unit.",
+     "ja": "1個あたり8ドルで合意しましょう。"
+    },
+    {
+     "t": 355.94,
+     "type": "shadow",
+     "en": "Let's agree on eight dollars per unit.",
+     "ja": "1個あたり8ドルで合意しましょう。"
+    },
+    {
+     "t": 390.37,
+     "type": "listen",
+     "en": "This is our final offer.",
+     "ja": "これが最終提案です。"
+    },
+    {
+     "t": 395.9,
+     "type": "shadow",
+     "en": "This is our final offer.",
+     "ja": "これが最終提案です。"
+    },
+    {
+     "t": 428.6,
+     "type": "listen",
+     "en": "Can you lower the price if we pay in advance?",
+     "ja": "前払いなら値下げできますか。"
+    },
+    {
+     "t": 435.64,
+     "type": "shadow",
+     "en": "Can you lower the price if we pay in advance?",
+     "ja": "前払いなら値下げできますか。"
+    },
+    {
+     "t": 471.01,
+     "type": "listen",
+     "en": "We'll need this price to stay fixed for one year.",
+     "ja": "この価格を1年間固定でお願いします。"
+    },
+    {
+     "t": 478.65,
+     "type": "shadow",
+     "en": "We'll need this price to stay fixed for one year.",
+     "ja": "この価格を1年間固定でお願いします。"
+    },
+    {
+     "t": 514.88,
+     "type": "listen",
+     "en": "Let me check with my manager and get back to you.",
+     "ja": "上司に確認してからお返事します。"
+    },
+    {
+     "t": 521.92,
+     "type": "shadow",
+     "en": "Let me check with my manager and get back to you.",
+     "ja": "上司に確認してからお返事します。"
+    },
+    {
+     "t": 557.29,
+     "type": "listen",
+     "en": "We really appreciate your flexibility on pricing.",
+     "ja": "価格面でご配慮いただき感謝します。"
+    },
+    {
+     "t": 564.62,
+     "type": "shadow",
+     "en": "We really appreciate your flexibility on pricing.",
+     "ja": "価格面でご配慮いただき感謝します。"
+    },
+    {
+     "t": 600.84,
+     "type": "listen",
+     "en": "Deal. Let's move forward.",
+     "ja": "決まりです。進めましょう。"
+    },
+    {
+     "t": 606.66,
+     "type": "shadow",
+     "en": "Deal. Let's move forward.",
+     "ja": "決まりです。進めましょう。"
+    },
+    {
+     "t": 641.22,
+     "type": "outro",
+     "en": "",
+     "ja": "お疲れさまでした。価格交渉のレッスンはこれで終わりです。"
+    }
+   ]
+  },
+  {
+   "id": "sample",
+   "title": "③サンプル依頼",
+   "topic": "貿易・英語",
+   "src": "common_listen/sample.m4a",
+   "dur": 645.5,
+   "segments": [
+    {
+     "t": 0.0,
+     "type": "intro",
+     "en": "",
+     "ja": "サンプル依頼で使うフレーズを練習します。英語を聞いて、日本語の意味を確認したら、同じように声に出してみましょう。"
+    },
+    {
+     "t": 9.22,
+     "type": "listen",
+     "en": "Could you send us a few samples before we place an order?",
+     "ja": "発注前にサンプルを何点か送っていただけますか。"
+    },
+    {
+     "t": 17.52,
+     "type": "shadow",
+     "en": "Could you send us a few samples before we place an order?",
+     "ja": "発注前にサンプルを何点か送っていただけますか。"
+    },
+    {
+     "t": 53.74,
+     "type": "listen",
+     "en": "How much do the samples cost?",
+     "ja": "サンプルの料金はいくらですか。"
+    },
+    {
+     "t": 59.87,
+     "type": "shadow",
+     "en": "How much do the samples cost?",
+     "ja": "サンプルの料金はいくらですか。"
+    },
+    {
+     "t": 93.44,
+     "type": "listen",
+     "en": "Is the sample fee refundable after the order?",
+     "ja": "発注後にサンプル料は返金されますか。"
+    },
+    {
+     "t": 100.79,
+     "type": "shadow",
+     "en": "Is the sample fee refundable after the order?",
+     "ja": "発注後にサンプル料は返金されますか。"
+    },
+    {
+     "t": 136.16,
+     "type": "listen",
+     "en": "Please send the samples by express courier.",
+     "ja": "サンプルは速達で送ってください。"
+    },
+    {
+     "t": 143.2,
+     "type": "shadow",
+     "en": "Please send the samples by express courier.",
+     "ja": "サンプルは速達で送ってください。"
+    },
+    {
+     "t": 178.56,
+     "type": "listen",
+     "en": "How long will it take to receive the samples?",
+     "ja": "サンプルが届くまでどのくらいかかりますか。"
+    },
+    {
+     "t": 186.26,
+     "type": "shadow",
+     "en": "How long will it take to receive the samples?",
+     "ja": "サンプルが届くまでどのくらいかかりますか。"
+    },
+    {
+     "t": 221.63,
+     "type": "listen",
+     "en": "We'd like to test the quality before committing.",
+     "ja": "本発注前に品質を確認したいです。"
+    },
+    {
+     "t": 228.98,
+     "type": "shadow",
+     "en": "We'd like to test the quality before committing.",
+     "ja": "本発注前に品質を確認したいです。"
+    },
+    {
+     "t": 264.35,
+     "type": "listen",
+     "en": "Could you include different colors in the samples?",
+     "ja": "サンプルに違う色も入れていただけますか。"
+    },
+    {
+     "t": 271.7,
+     "type": "shadow",
+     "en": "Could you include different colors in the samples?",
+     "ja": "サンプルに違う色も入れていただけますか。"
+    },
+    {
+     "t": 307.07,
+     "type": "listen",
+     "en": "The sample quality looks great.",
+     "ja": "サンプルの品質はとても良いですね。"
+    },
+    {
+     "t": 313.51,
+     "type": "shadow",
+     "en": "The sample quality looks great.",
+     "ja": "サンプルの品質はとても良いですね。"
+    },
+    {
+     "t": 347.07,
+     "type": "listen",
+     "en": "We found a small issue with the stitching.",
+     "ja": "縫製に小さな問題がありました。"
+    },
+    {
+     "t": 353.8,
+     "type": "shadow",
+     "en": "We found a small issue with the stitching.",
+     "ja": "縫製に小さな問題がありました。"
+    },
+    {
+     "t": 388.23,
+     "type": "listen",
+     "en": "Could you fix this before mass production?",
+     "ja": "量産前に修正していただけますか。"
+    },
+    {
+     "t": 394.96,
+     "type": "shadow",
+     "en": "Could you fix this before mass production?",
+     "ja": "量産前に修正していただけますか。"
+    },
+    {
+     "t": 429.38,
+     "type": "listen",
+     "en": "Please tell us the sample lead time.",
+     "ja": "サンプルの納期を教えてください。"
+    },
+    {
+     "t": 435.51,
+     "type": "shadow",
+     "en": "Please tell us the sample lead time.",
+     "ja": "サンプルの納期を教えてください。"
+    },
+    {
+     "t": 469.07,
+     "type": "listen",
+     "en": "Can you provide a pre-production sample too?",
+     "ja": "量産前サンプルも提供してもらえますか。"
+    },
+    {
+     "t": 476.43,
+     "type": "shadow",
+     "en": "Can you provide a pre-production sample too?",
+     "ja": "量産前サンプルも提供してもらえますか。"
+    },
+    {
+     "t": 511.8,
+     "type": "listen",
+     "en": "We approve this sample for mass production.",
+     "ja": "このサンプルで量産を承認します。"
+    },
+    {
+     "t": 518.84,
+     "type": "shadow",
+     "en": "We approve this sample for mass production.",
+     "ja": "このサンプルで量産を承認します。"
+    },
+    {
+     "t": 554.2,
+     "type": "listen",
+     "en": "Please keep this sample as the quality standard.",
+     "ja": "このサンプルを品質基準として保管してください。"
+    },
+    {
+     "t": 561.9,
+     "type": "shadow",
+     "en": "Please keep this sample as the quality standard.",
+     "ja": "このサンプルを品質基準として保管してください。"
+    },
+    {
+     "t": 597.27,
+     "type": "listen",
+     "en": "Thank you for sending the samples so quickly.",
+     "ja": "早急にサンプルを送っていただきありがとうございます。"
+    },
+    {
+     "t": 604.96,
+     "type": "shadow",
+     "en": "Thank you for sending the samples so quickly.",
+     "ja": "早急にサンプルを送っていただきありがとうございます。"
+    },
+    {
+     "t": 641.33,
+     "type": "outro",
+     "en": "",
+     "ja": "お疲れさまでした。サンプル依頼のレッスンはこれで終わりです。"
+    }
+   ]
+  },
+  {
+   "id": "incoterms",
+   "title": "④輸送・取引条件（Incoterms・MOQ・リードタイム・支払条件）",
+   "topic": "貿易・英語",
+   "src": "common_listen/incoterms.m4a",
+   "dur": 721.4,
+   "segments": [
+    {
+     "t": 0.0,
+     "type": "intro",
+     "en": "",
+     "ja": "輸送と取引条件のフレーズを練習します。FOBやCIFなどの貿易条件、MOQ、リードタイム、支払条件（T/T）の正しい意味も一緒に確認します。"
+    },
+    {
+     "t": 14.03,
+     "type": "listen",
+     "en": "What trade term do you use, F O B or C I F?",
+     "ja": "貿易条件はFOBですかCIFですか。"
+    },
+    {
+     "t": 23.24,
+     "type": "shadow",
+     "en": "What trade term do you use, F O B or C I F?",
+     "ja": "貿易条件はFOBですかCIFですか。"
+    },
+    {
+     "t": 61.27,
+     "type": "listen",
+     "en": "F O B means the seller's responsibility ends once the goods are loaded onto the ship.",
+     "ja": "FOBは、荷物が船に積み込まれた時点で売り手の責任が終わるという意味です。"
+    },
+    {
+     "t": 73.9,
+     "type": "shadow",
+     "en": "F O B means the seller's responsibility ends once the goods are loaded onto the ship.",
+     "ja": "FOBは、荷物が船に積み込まれた時点で売り手の責任が終わるという意味です。"
+    },
+    {
+     "t": 115.46,
+     "type": "listen",
+     "en": "C I F includes the shipping cost and insurance to the destination port, but like F O B, risk passes to the buyer once the goods are loaded onto the ship at the export port.",
+     "ja": "CIFは、目的港までの運賃と保険料が価格に含まれていますが、FOBと同様に、輸出港で荷物が船に積み込まれた時点でリスクは買い手に移ります。"
+    },
+    {
+     "t": 138.9,
+     "type": "shadow",
+     "en": "C I F includes the shipping cost and insurance to the destination port, but like F O B, risk passes to the buyer once the goods are loaded onto the ship at the export port.",
+     "ja": "CIFは、目的港までの運賃と保険料が価格に含まれていますが、FOBと同様に、輸出港で荷物が船に積み込まれた時点でリスクは買い手に移ります。"
+    },
+    {
+     "t": 194.64,
+     "type": "listen",
+     "en": "Under E X W, we need to arrange everything from your factory.",
+     "ja": "EXWの場合、御社の工場からすべて私たちが手配する必要があります。"
+    },
+    {
+     "t": 206.68,
+     "type": "shadow",
+     "en": "Under E X W, we need to arrange everything from your factory.",
+     "ja": "EXWの場合、御社の工場からすべて私たちが手配する必要があります。"
+    },
+    {
+     "t": 246.43,
+     "type": "listen",
+     "en": "What is your minimum order quantity for this item?",
+     "ja": "この商品の最低発注数量、MOQはどれくらいですか。"
+    },
+    {
+     "t": 255.41,
+     "type": "shadow",
+     "en": "What is your minimum order quantity for this item?",
+     "ja": "この商品の最低発注数量、MOQはどれくらいですか。"
+    },
+    {
+     "t": 288.75,
+     "type": "listen",
+     "en": "The M O Q for this product is five hundred units.",
+     "ja": "この商品のMOQは500個です。"
+    },
+    {
+     "t": 297.0,
+     "type": "shadow",
+     "en": "The M O Q for this product is five hundred units.",
+     "ja": "この商品のMOQは500個です。"
+    },
+    {
+     "t": 335.03,
+     "type": "listen",
+     "en": "What is the lead time after we confirm the order?",
+     "ja": "発注確定後のリードタイム、納期はどれくらいですか。"
+    },
+    {
+     "t": 343.35,
+     "type": "shadow",
+     "en": "What is the lead time after we confirm the order?",
+     "ja": "発注確定後のリードタイム、納期はどれくらいですか。"
+    },
+    {
+     "t": 376.7,
+     "type": "listen",
+     "en": "The lead time is about thirty days after the deposit.",
+     "ja": "デポジット後、リードタイムは約30日です。"
+    },
+    {
+     "t": 384.68,
+     "type": "shadow",
+     "en": "The lead time is about thirty days after the deposit.",
+     "ja": "デポジット後、リードタイムは約30日です。"
+    },
+    {
+     "t": 419.75,
+     "type": "listen",
+     "en": "What are your payment terms?",
+     "ja": "お支払い条件を教えてください。"
+    },
+    {
+     "t": 425.59,
+     "type": "shadow",
+     "en": "What are your payment terms?",
+     "ja": "お支払い条件を教えてください。"
+    },
+    {
+     "t": 454.31,
+     "type": "listen",
+     "en": "We usually ask for a thirty percent deposit and seventy percent balance by T T.",
+     "ja": "通常、30%の内金と70%の残金をT/T、銀行振込でお願いしています。"
+    },
+    {
+     "t": 468.53,
+     "type": "shadow",
+     "en": "We usually ask for a thirty percent deposit and seventy percent balance by T T.",
+     "ja": "通常、30%の内金と70%の残金をT/T、銀行振込でお願いしています。"
+    },
+    {
+     "t": 510.09,
+     "type": "listen",
+     "en": "Can we pay the balance against the copy of the B L?",
+     "ja": "B/Lのコピーと引き換えに残金を支払うことはできますか。"
+    },
+    {
+     "t": 519.01,
+     "type": "shadow",
+     "en": "Can we pay the balance against the copy of the B L?",
+     "ja": "B/Lのコピーと引き換えに残金を支払うことはできますか。"
+    },
+    {
+     "t": 554.09,
+     "type": "listen",
+     "en": "Which port will you ship from?",
+     "ja": "どの港から出荷しますか。"
+    },
+    {
+     "t": 560.21,
+     "type": "shadow",
+     "en": "Which port will you ship from?",
+     "ja": "どの港から出荷しますか。"
+    },
+    {
+     "t": 589.96,
+     "type": "listen",
+     "en": "How long does the shipping take to Japan?",
+     "ja": "日本までの船便はどのくらいかかりますか。"
+    },
+    {
+     "t": 597.0,
+     "type": "shadow",
+     "en": "How long does the shipping take to Japan?",
+     "ja": "日本までの船便はどのくらいかかりますか。"
+    },
+    {
+     "t": 628.47,
+     "type": "listen",
+     "en": "Could you share the H S code for customs clearance?",
+     "ja": "通関のためHSコードを教えていただけますか。"
+    },
+    {
+     "t": 636.76,
+     "type": "shadow",
+     "en": "Could you share the H S code for customs clearance?",
+     "ja": "通関のためHSコードを教えていただけますか。"
+    },
+    {
+     "t": 671.83,
+     "type": "listen",
+     "en": "Please send the shipping documents once the goods are loaded.",
+     "ja": "荷物が積み込まれたら船積み書類を送ってください。"
+    },
+    {
+     "t": 680.13,
+     "type": "shadow",
+     "en": "Please send the shipping documents once the goods are loaded.",
+     "ja": "荷物が積み込まれたら船積み書類を送ってください。"
+    },
+    {
+     "t": 716.2,
+     "type": "outro",
+     "en": "",
+     "ja": "お疲れさまでした。輸送・取引条件のレッスンはこれで終わりです。"
+    }
+   ]
+  },
+  {
+   "id": "smalltalk",
+   "title": "⑤旅行・日常の雑談",
+   "topic": "旅行・日常",
+   "src": "common_listen/smalltalk.m4a",
+   "dur": 612.4,
+   "segments": [
+    {
+     "t": 0.0,
+     "type": "intro",
+     "en": "",
+     "ja": "旅行や日常のちょっとした雑談フレーズを練習します。英語を聞いて、日本語の意味を確認したら、同じように声に出してみましょう。"
+    },
+    {
+     "t": 10.5,
+     "type": "listen",
+     "en": "Is this your first time visiting Japan?",
+     "ja": "日本に来るのは初めてですか。"
+    },
+    {
+     "t": 16.91,
+     "type": "shadow",
+     "en": "Is this your first time visiting Japan?",
+     "ja": "日本に来るのは初めてですか。"
+    },
+    {
+     "t": 51.34,
+     "type": "listen",
+     "en": "What brought you to this city?",
+     "ja": "どうしてこの街に来られたんですか。"
+    },
+    {
+     "t": 57.18,
+     "type": "shadow",
+     "en": "What brought you to this city?",
+     "ja": "どうしてこの街に来られたんですか。"
+    },
+    {
+     "t": 89.88,
+     "type": "listen",
+     "en": "Do you have any recommendations for local food?",
+     "ja": "地元のおすすめの食べ物はありますか。"
+    },
+    {
+     "t": 97.24,
+     "type": "shadow",
+     "en": "Do you have any recommendations for local food?",
+     "ja": "地元のおすすめの食べ物はありますか。"
+    },
+    {
+     "t": 132.6,
+     "type": "listen",
+     "en": "How long are you staying here?",
+     "ja": "こちらにはどのくらい滞在されますか。"
+    },
+    {
+     "t": 138.76,
+     "type": "shadow",
+     "en": "How long are you staying here?",
+     "ja": "こちらにはどのくらい滞在されますか。"
+    },
+    {
+     "t": 171.46,
+     "type": "listen",
+     "en": "The weather has been great this week.",
+     "ja": "今週はずっと天気が良いですね。"
+    },
+    {
+     "t": 177.59,
+     "type": "shadow",
+     "en": "The weather has been great this week.",
+     "ja": "今週はずっと天気が良いですね。"
+    },
+    {
+     "t": 211.15,
+     "type": "listen",
+     "en": "Where are you from originally?",
+     "ja": "もともとはどちらの出身ですか。"
+    },
+    {
+     "t": 217.3,
+     "type": "shadow",
+     "en": "Where are you from originally?",
+     "ja": "もともとはどちらの出身ですか。"
+    },
+    {
+     "t": 250.01,
+     "type": "listen",
+     "en": "I love traveling, but I don't get much free time.",
+     "ja": "旅行は大好きですが、あまり休みが取れないんです。"
+    },
+    {
+     "t": 258.3,
+     "type": "shadow",
+     "en": "I love traveling, but I don't get much free time.",
+     "ja": "旅行は大好きですが、あまり休みが取れないんです。"
+    },
+    {
+     "t": 294.53,
+     "type": "listen",
+     "en": "What do you do for work?",
+     "ja": "お仕事は何をされていますか。"
+    },
+    {
+     "t": 300.37,
+     "type": "shadow",
+     "en": "What do you do for work?",
+     "ja": "お仕事は何をされていますか。"
+    },
+    {
+     "t": 333.07,
+     "type": "listen",
+     "en": "That sounds like a fun trip.",
+     "ja": "それは楽しそうな旅ですね。"
+    },
+    {
+     "t": 338.91,
+     "type": "shadow",
+     "en": "That sounds like a fun trip.",
+     "ja": "それは楽しそうな旅ですね。"
+    },
+    {
+     "t": 371.61,
+     "type": "listen",
+     "en": "Do you have any plans for the weekend?",
+     "ja": "週末は何か予定がありますか。"
+    },
+    {
+     "t": 378.34,
+     "type": "shadow",
+     "en": "Do you have any plans for the weekend?",
+     "ja": "週末は何か予定がありますか。"
+    },
+    {
+     "t": 412.77,
+     "type": "listen",
+     "en": "This is my first time trying this dish.",
+     "ja": "この料理を食べるのは初めてです。"
+    },
+    {
+     "t": 419.5,
+     "type": "shadow",
+     "en": "This is my first time trying this dish.",
+     "ja": "この料理を食べるのは初めてです。"
+    },
+    {
+     "t": 453.92,
+     "type": "listen",
+     "en": "It was so nice meeting you.",
+     "ja": "お会いできて本当によかったです。"
+    },
+    {
+     "t": 460.05,
+     "type": "shadow",
+     "en": "It was so nice meeting you.",
+     "ja": "お会いできて本当によかったです。"
+    },
+    {
+     "t": 493.61,
+     "type": "listen",
+     "en": "Let's keep in touch.",
+     "ja": "連絡を取り合いましょう。"
+    },
+    {
+     "t": 498.49,
+     "type": "shadow",
+     "en": "Let's keep in touch.",
+     "ja": "連絡を取り合いましょう。"
+    },
+    {
+     "t": 530.25,
+     "type": "listen",
+     "en": "Safe travels!",
+     "ja": "道中お気をつけて。"
+    },
+    {
+     "t": 535.12,
+     "type": "shadow",
+     "en": "Safe travels!",
+     "ja": "道中お気をつけて。"
+    },
+    {
+     "t": 566.88,
+     "type": "listen",
+     "en": "I hope we can meet again sometime.",
+     "ja": "またいつかお会いできたら嬉しいです。"
+    },
+    {
+     "t": 573.01,
+     "type": "shadow",
+     "en": "I hope we can meet again sometime.",
+     "ja": "またいつかお会いできたら嬉しいです。"
+    },
+    {
+     "t": 607.58,
+     "type": "outro",
+     "en": "",
+     "ja": "お疲れさまでした。旅行・日常の雑談のレッスンはこれで終わりです。"
+    }
+   ]
+  }
+ ]
+}
