@@ -1,0 +1,241 @@
+/* =====================================================================
+   PC・タブレット横の画面（2026-11-08・docs/pc-layout-1108.md）。名前は dk- だけ。いちばん最後に読む。
+   スマホ（〜767px）には何も当てない＝スマホの見た目はそのまま。
+   ・768〜1099px：左に細いナビ（アイコン＋小さな文字＝ナビゲーションレール）
+   ・1100px〜  ：左にサイドナビ（ロゴ・文字つきのメニュー・じぶんのカード）＋中身は「メインの列＋右の列」（app/_part_desk.js の dkCols/dkArrange）
+   色は base.css の変数、形は ds.css のトークン（--sp-*・--r-*・--shadow-*・--hero-bg）だけを使う。
+   ===================================================================== */
+.dk-brand,.dk-foot{display:none}
+
+@media (min-width:768px){
+  :root{--tab-h:0px;--dk-nav:92px;--dk-ink:#EAF1FB;--dk-ink2:rgba(234,241,251,.66);--dk-gold:#FFD54A}
+  body{margin:0;padding-left:var(--dk-nav);padding-bottom:var(--sp-8)}
+
+  /* ---------- 左のナビ（下のタブバーを左に立てる。中身・順番・押したときの動きは同じ） ---------- */
+  .gotabs{position:fixed;top:0;bottom:0;left:0;right:auto;z-index:40;width:var(--dk-nav);display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:var(--sp-4);
+    padding:calc(env(safe-area-inset-top,0px) + var(--sp-4)) var(--sp-2) var(--sp-4);border:0;box-shadow:6px 0 30px -18px rgba(10,22,64,.6);color:var(--dk-ink);overflow-y:auto;overflow-x:hidden;scrollbar-width:none;
+    background:radial-gradient(140% 60% at 0% 0%,rgba(59,155,235,.35) 0%,transparent 60%),radial-gradient(120% 50% at 100% 100%,rgba(242,183,5,.16) 0%,transparent 60%),linear-gradient(180deg,#1C3778 0%,#132a66 45%,#0C1A44 100%);
+    -webkit-backdrop-filter:none;backdrop-filter:none}
+  .gotabs::-webkit-scrollbar{display:none}
+  .gotabs::before{content:"";position:absolute;inset:0;background:var(--grain);opacity:.18;mix-blend-mode:overlay;pointer-events:none}
+  .gotabs .in{position:relative;flex-direction:column;justify-content:flex-start;align-items:stretch;height:auto;width:100%;max-width:none;margin:0;gap:var(--sp-1)}
+  .gotabs button{flex:none;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:68px;padding:var(--sp-2) 2px;border-radius:var(--r-lg);
+    color:var(--dk-ink2)!important;font-size:11px;font-weight:var(--fw-m);letter-spacing:.02em;transition:background .18s var(--ease,ease),color .18s var(--ease,ease)}
+  .gotabs button svg{width:24px;height:24px;padding:6px 14px;margin:0;border-radius:var(--r-pill);stroke-width:1.8;box-sizing:content-box;transition:background .18s,color .18s}
+  .gotabs button:hover{color:var(--dk-ink)!important;background:rgba(255,255,255,.06)!important}
+  .gotabs button[aria-selected="true"]{color:#fff!important;background:transparent!important}
+  .gotabs button[aria-selected="true"] svg{padding:6px 14px;margin:0;stroke-width:2.2;color:#1A2F66;background:var(--btn-gold,linear-gradient(180deg,#FFE27A,#F2B705));box-shadow:0 6px 16px -6px rgba(242,183,5,.7)}
+  .gotabs button:focus-visible{outline:3px solid var(--dk-gold);outline-offset:-3px}
+  .gotabs .bdg{top:4px;left:calc(50% + 10px);right:auto;box-shadow:0 0 0 2px #132a66}
+
+  /* ロゴ（細いナビのときは丸いマークだけ） */
+  .dk-brand{display:flex;position:relative;align-items:center;justify-content:center;gap:var(--sp-2);min-height:48px;padding:0 var(--sp-1);color:#fff;text-decoration:none}
+  .dk-brand .logo{display:block;height:34px;width:auto}
+  .dk-brand .lg-c{display:none}
+  .dk-brand .lg-w{display:block}
+  .dk-brand .goname{display:none}
+
+  /* 上の帯：ロゴは左のナビにあるので、右の「更新・ベル・設定」だけ */
+  .top .brand{visibility:hidden;width:0;min-width:0;overflow:hidden}
+  .top .bar{min-height:52px;justify-content:flex-end}
+  .demobar{padding-inline:var(--sp-6)}
+
+  /* 中身の幅：本文は読みやすい幅に（1行が長くなりすぎない） */
+  .wrap{padding-inline:var(--sp-6)}
+  /* みんな：タイムラインは読みやすい幅でまん中に（1100px〜は右に「今日がんばった人」） */
+  #us:has(> #usBody.mn-tl){max-width:760px}
+
+  /* 下のタブの上に出していたもの（質問ボタン・保存バー・ランキングの自分の行）は、画面の下に */
+  .pf-savebar{bottom:var(--sp-2)}
+  body:has(.pf-savebar){padding-bottom:var(--sp-8)!important}
+
+  /* 画面の下のお知らせ（今日やることのこり◯こ）：中身の列のまん中に */
+  .nudge{left:calc(50% + var(--dk-nav) / 2);bottom:var(--sp-6)}
+  /* 再生バー（速さ・ゆっくり声の切りかえ）：中身の列のまん中に。PC は下のタブが無いので、タブの分（76px）は上げない（docs/slow-voice-1107.md） */
+  .pbar{left:calc(50% + var(--dk-nav) / 2);bottom:calc(var(--sp-6) + env(safe-area-inset-bottom,0px));width:min(560px,calc(100% - var(--dk-nav) - var(--sp-6) * 2))}
+
+  /* 下から出るシート → PC では画面のまん中に出すカード */
+  :is(.tp-overlay,.tv-overlay,.ct-overlay,.hr-sheet,.pv-sheet,.pf-sheet){align-items:center;padding:var(--sp-6)}
+  .tk-sheet .tk-sheet-in{max-width:520px}
+  .tk-sheet-acts{flex-direction:row-reverse}
+  .tk-sheet-acts .btn{width:auto;flex:1}
+  .tl-sheet{justify-content:center;padding:var(--sp-6)}
+  :is(.tp-overlay,.tv-overlay,.ct-overlay,.hr-sheet,.pv-sheet,.pf-sheet,.tl-sheet) > :not(script):not(style){border-radius:var(--r-xl,26px)!important;max-height:calc(100dvh - 48px)}
+
+  /* 全画面（設定・個人情報）→ 右から出るパネル（うしろのページが見えたまま） */
+  .st-screen,.pv-screen{left:auto;width:min(560px,100%);border-left:1px solid var(--line);box-shadow:-24px 0 60px -20px rgba(10,20,40,.35)}
+}
+
+/* ---------- 1100px〜：文字つきのサイドナビ＋2列 ---------- */
+@media (min-width:1100px){
+  :root{--dk-nav:248px}
+  .gotabs{padding:calc(env(safe-area-inset-top,0px) + var(--sp-5)) var(--sp-4) var(--sp-4);gap:var(--sp-6)}
+  .gotabs .in{gap:2px}
+  .gotabs button{flex-direction:row;justify-content:flex-start;gap:var(--sp-3);min-height:50px;padding:0 var(--sp-3);border-radius:var(--r-md);font-size:var(--fs-md);font-weight:var(--fw-m);letter-spacing:.04em}
+  .gotabs button svg{width:22px;height:22px;padding:6px;border-radius:10px;background:rgba(255,255,255,.07)}
+  .gotabs button[aria-selected="true"]{background:linear-gradient(90deg,rgba(255,255,255,.16),rgba(255,255,255,.05))!important;box-shadow:inset 0 0 0 1px rgba(255,255,255,.10)}
+  .gotabs button[aria-selected="true"]::before{content:"";position:absolute;left:-16px;top:12px;bottom:12px;width:4px;border-radius:0 4px 4px 0;background:var(--dk-gold);box-shadow:0 0 12px rgba(255,213,74,.8)}
+  .gotabs button[aria-selected="true"] svg{padding:6px;border-radius:10px}
+  .gotabs button[aria-selected="true"] span{font-weight:var(--fw-b)}
+  .gotabs .bdg{top:50%;left:auto;right:var(--sp-3);transform:translateY(-50%);box-shadow:none}
+
+  .dk-brand{justify-content:flex-start;padding:0 var(--sp-2);gap:10px}
+  .dk-brand .logo{height:38px}
+  .dk-brand .goname{display:inline-flex;align-items:center;gap:6px;font-size:var(--fs-md);font-weight:var(--fw-b);color:#fff;white-space:nowrap;letter-spacing:.02em}
+  .dk-brand .goname b{font-family:var(--f-num);font-size:var(--fs-xl);color:var(--dk-gold);-webkit-text-stroke:0;letter-spacing:-.01em}
+  .dk-brand .goname i{font-style:normal;font-size:10px;font-weight:var(--fw-m);letter-spacing:.06em;color:var(--dk-ink2);border:1px solid rgba(255,255,255,.25);border-radius:var(--r-pill);padding:0 6px;line-height:16px}
+
+  /* いちばん下：じぶんのカード（名前・Lv・連続） */
+  .dk-foot{display:block;position:relative;margin-top:auto}
+  .dk-foot[hidden]{display:none}
+  .dk-me{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:var(--sp-3);width:100%;padding:var(--sp-3);border:1px solid rgba(255,255,255,.12);border-radius:var(--r-lg);
+    background:linear-gradient(150deg,rgba(255,255,255,.12),rgba(255,255,255,.04));color:#fff;font:inherit;text-align:left;cursor:pointer;transition:background .18s}
+  .dk-me:hover{background:linear-gradient(150deg,rgba(255,255,255,.18),rgba(255,255,255,.07))}
+  .dk-av{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;overflow:hidden;background:var(--btn-gold);color:#1A2F66;font-weight:var(--fw-b);font-size:var(--fs-lg);box-shadow:0 0 0 2px rgba(255,255,255,.7)}
+  .dk-av img{width:100%;height:100%;object-fit:cover;display:block}
+  .dk-av > *{width:100%;height:100%}
+  .dk-me-t{display:grid;min-width:0;line-height:1.3}
+  .dk-me-t b{font-size:var(--fs-sm);font-weight:var(--fw-b);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .dk-me-t small{font-size:11px;color:var(--dk-ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .dk-run{display:grid;justify-items:center;line-height:1}
+  .dk-run b{font-family:var(--f-num);font-size:var(--fs-2xl);font-weight:var(--fw-b);color:var(--dk-gold);text-shadow:0 0 16px rgba(255,213,74,.45)}
+  .dk-run small{font-size:10px;color:var(--dk-ink2);margin-top:2px}
+
+  /* 中身：最大 1200px・左右の余白は画面に合わせて */
+  .wrap{max-width:1200px;padding-inline:clamp(24px,3vw,44px)}
+  #pane-tr .wrap{max-width:1200px}
+
+  /* ---------- 2列（メイン＋右の列） ---------- */
+  .dk-cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,368px);gap:var(--sp-6) 28px;align-items:start;margin-top:var(--sp-4)}
+  .dk-main{min-width:0}
+  .dk-main > :first-child{margin-top:0!important}
+  .dk-side{min-width:0;display:flex;flex-direction:column;gap:var(--sp-4)}
+  .dk-side > *{margin-block:0!important}
+  .dk-side:empty{display:none}
+  .dk-cols:has(> .dk-side:empty){grid-template-columns:minmax(0,1fr)}
+  /* 右の列が短いページは、スクロールしても右の列がついてくる */
+  :is(.dk-home,.dk-tr) > .dk-side{position:sticky;top:var(--sp-4)}
+  body.cgbk-on :is(.dk-home,.dk-tr) > .dk-side{top:calc(76px + var(--sp-2))}
+
+  /* ホーム：あいさつを大きく・主役カードを横長に */
+  #me > .ds-greet{margin-top:var(--sp-2)}
+  #me > .ds-greet b{font-size:var(--fs-3xl);letter-spacing:-.01em}
+  .dk-home .ds-hero{min-height:360px}
+
+  /* 英語：右の列ではステータスを縦に */
+  .dk-kz > .dk-main > :is(.ez-make,.ez-itv,.rp-cnt):first-child{margin-top:0}
+  /* 英語：はじめの大きいカードは横長（左に文言、右 220px にボタン）。docs/quick-itv-1109.md */
+  .ds-card.lift.ez-itv{grid-template-columns:minmax(0,1fr) 220px;gap:var(--sp-3) var(--sp-5);align-items:start}
+  .ez-itv-zero{grid-template-areas:"head cta" "minis cta" "meta cta"}
+  .ez-itv-head{grid-area:head}
+  .ez-itv-minis{grid-area:minis}
+  .ez-itv-meta{grid-area:meta}
+  .ez-itv-cta{grid-area:cta;align-self:center}
+  .ez-itv-wave{right:calc(220px + var(--sp-5) + var(--sp-4))}
+  .ez-itv-go{padding-inline:8px;font-size:15px;white-space:nowrap}
+  /* 英語トップ：右の列（docs/english-top-1109.md） */
+  .dk-side > .ez-conn > .sec-head{margin:0 2px}
+  .dk-kz > .dk-main > .ez-sec:first-of-type > .sec-head{margin-top:var(--sp-5)}
+
+  /* マイ：タイルは3つ並び */
+  .dk-my .mytiles{grid-template-columns:repeat(3,minmax(0,1fr))}
+
+  /* みんな：タイムラインは読みやすい幅（〜640px）＋右に「今日がんばった人」（ついてくる） */
+  #us:has(> #usBody.mn-tl){max-width:1080px}
+  #snsTl:has(> .tl-rail){display:grid;grid-template-columns:minmax(0,640px) minmax(280px,340px);grid-template-areas:"comp rail" "subs rail" "note rail" "list rail";column-gap:28px;justify-content:center;align-items:start}
+  #snsTl > .tl-comp{grid-area:comp}
+  #snsTl > .tl-subs{grid-area:subs}
+  #snsTl > .mn-note{grid-area:note}
+  #snsTl > .tl-list{grid-area:list;min-width:0}
+  #snsTl > .tl-rail{grid-area:rail;position:sticky;top:var(--sp-4);padding:var(--sp-4) var(--sp-4) var(--sp-5)}
+  #snsTl > .tl-rail .tl-faces{flex-wrap:wrap;overflow:visible;gap:var(--sp-3) var(--sp-2)}
+  #snsTl > .tl-rail .tl-face{width:calc((100% - 3 * var(--sp-2)) / 4);max-width:none}
+  #snsTl > .tl-rail::after{font-size:64px}
+  #usSeg{max-width:1008px;margin-inline:auto}
+
+  /* 会員サイトの講座：右の列では、横にはみ出さない（横スクロールのまま） */
+  .dk-side .ms-shelf{margin-inline:0;padding-inline:0;scroll-padding-inline:0}
+
+  /* 中の画面（教材・設定の中・プロフィールなど）の本文：横に広がりすぎない */
+  .kzback ~ :is(p,ul,ol){max-width:760px}
+
+  /* ---------- 中の画面（上に「← 戻る」の帯が出ている画面）（2026-11-09） ----------
+     横いっぱいに伸ばさず、読みやすい幅（960px）でまん中に。戻るの帯も同じ幅にそろえる。
+     地図・図鑑・アルバム・ポイント・送信リストのように「広いほど見やすい」画面だけは広いまま。 */
+  body.cgbk-on{--dk-sub:960px}
+  body.cgbk-on:has(.pane:not([hidden]) :is(#mxBox,.trq-grid,#wall,#points,#dexwrap:not([hidden]))){--dk-sub:1200px}
+  body.cgbk-on :is(.cgbk,.pane) > .wrap,
+  body.cgbk-on #us:has(> #usBody){max-width:var(--dk-sub)}
+  body.cgbk-on #usSeg{max-width:none}
+  /* 送信リスト：左の「送る文」は、スクロールしても戻るの帯の下についてくる */
+  body.cgbk-on .trq-tpl{top:calc(76px + var(--sp-3))}
+}
+
+/* ---------- 768px〜（タブレット横・PC）：ボタン・地図・名鑑（2026-11-09） ---------- */
+@media (min-width:768px){
+  /* 大きなボタン：横いっぱいに伸ばさず、押しやすい幅（〜440px）でまん中に（右の列・シート・設定の中はそのまま） */
+  main .wrap :is(.ds-btn-gold,.ds-btn-blue,.hero-go,.sns-post,.hr-send,.mn-ghost.wide,.mn-tk-acts > .mn-ghost):not(.dk-side *){max-width:440px;margin-inline:auto}
+  /* 教材をつくる・AIと会話：レベルの4枚は1行に並べる（3枚＋1枚にならない） */
+  .lvpick{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+  /* ひろばのマップ：縦長の地図は、画面の高さにおさまる大きさでまん中に（スクロールしないで全体が見える） */
+  .hr-map{max-width:max(560px,calc((100dvh - 220px) * 100 / 130));margin-inline:auto}
+  /* みんな → 名鑑：メンバーのカードを2列に（1列だと縦に長すぎる） */
+  .mn-dir .pf-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-3);align-items:stretch}
+  .mn-dir .pf-list > li{min-width:0}
+  /* わたしのリズム：日付のマスが大きくなりすぎない（カレンダーはまん中に） */
+  body.cgbk-on #my > .skm .skm-cal{max-width:560px;margin-inline:auto}
+  body.cgbk-on #my .panel > .heat,body.cgbk-on #my .panel > .heatlg{max-width:720px;margin-inline:auto}
+}
+
+@media (min-width:1400px){
+  .ez-more{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);overflow:visible;margin:0;padding:0}
+  .ez-more > *{min-width:0}
+}
+
+@media (min-width:1440px){
+  :root{--dk-nav:264px}
+  .wrap{max-width:1280px}
+  .dk-cols{grid-template-columns:minmax(0,1fr) 392px;column-gap:32px}
+  body.cgbk-on:has(.pane:not([hidden]) :is(#mxBox,.trq-grid,#wall,#points,#dexwrap:not([hidden]))){--dk-sub:1280px}
+}
+
+/* 英語＞ライブで売る「本番用プロンプター」（2026-11-10・docs/prompter-1110.md）：全画面の上に重ねるので、左のナビの幅は気にしない
+   ・768px〜：文字を大きく・キーボードの案内を出す　・1100px〜：右に「コメントで聞かれたら」の列（Q&Aボタンでしまえる）・操作の帯は台本の列の下にまん中 */
+@media (min-width:768px){
+  .lpr{--lpr-fs:44px}
+  .lpr-top{padding:16px 20px 8px}
+  .lpr-col{padding:0 48px}
+  .lpr-now{top:12px;font-size:13px}
+  .lpr-bar{margin-bottom:18px;padding:12px 18px 10px}
+  .lpr-ctl{grid-template-areas:"h b p f s";column-gap:16px}
+  .lpr-home{height:44px}
+  .lpr-sp{height:44px}.lpr-sp button{height:44px}
+  .lpr-keys{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 16px;margin:0;font-size:11px;color:rgba(245,247,255,.5)}
+  .lpr-keys span{display:inline-flex;align-items:center;gap:4px}
+  .lpr-keys kbd{min-width:20px;padding:1px 5px;border-radius:5px;background:rgba(255,255,255,.1);box-shadow:inset 0 -1px 0 rgba(255,255,255,.12);font:700 10px/1.5 var(--f-num);text-align:center;color:rgba(245,247,255,.8)}
+  .lpr-qa{left:auto;right:16px;bottom:16px;width:400px}
+  .lpr-entry{grid-template-columns:150px minmax(0,1fr) 18px;padding:12px 18px 12px 12px}
+  .lpr-pv{height:96px}
+  .lpr-pv-roll{font-size:11px;line-height:15px}
+  .lpr-pv-g{top:47px}
+}
+@media (min-width:1100px){
+  .lpr{--lpr-fs:56px}
+  .lpr-main{display:grid;grid-template-columns:minmax(0,1fr) 380px;grid-template-rows:minmax(0,1fr)}
+  .lpr.qa-off .lpr-main{grid-template-columns:minmax(0,1fr) 0}
+  .lpr-col{max-width:18em}
+  .lpr-qa{position:relative;left:auto;right:auto;bottom:auto;width:auto;max-height:none;margin:0 16px 0 0;padding:18px 20px 8px;border-radius:24px;transform:none;visibility:visible;transition:none;
+    background:rgba(255,255,255,.04);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);overflow:hidden}
+  .lpr.qa-off .lpr-qa{visibility:hidden;margin:0;padding:0}
+  .lpr-qa .lpr-x.sm{display:none}
+  .lpr-qa h3{font-size:16px}
+  .lpr-qa .q{font-size:17px}
+  .lpr-qa .a{font-size:15px}
+  .lpr-bar{width:min(720px,calc(100% - 40px))}
+}
+
+/* ダークテーマ：ナビは同じ紺のまま、少し深く */
+@media (prefers-color-scheme: dark) and (min-width:768px){:root:not([data-theme="light"]) .gotabs{background:radial-gradient(140% 60% at 0% 0%,rgba(44,111,184,.35) 0%,transparent 60%),radial-gradient(120% 50% at 100% 100%,rgba(246,201,51,.12) 0%,transparent 60%),linear-gradient(180deg,#132a66 0%,#0B1638 60%,#070F28 100%);border-right:1px solid var(--line)}}
+@media (min-width:768px){:root[data-theme="dark"] .gotabs{background:radial-gradient(140% 60% at 0% 0%,rgba(44,111,184,.35) 0%,transparent 60%),radial-gradient(120% 50% at 100% 100%,rgba(246,201,51,.12) 0%,transparent 60%),linear-gradient(180deg,#132a66 0%,#0B1638 60%,#070F28 100%);border-right:1px solid var(--line)}}
+
+@media (prefers-reduced-motion: reduce){.gotabs button,.gotabs button svg,.dk-me{transition:none}}
