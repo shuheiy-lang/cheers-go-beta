@@ -1,0 +1,3282 @@
+{
+ "_note": "先生の声のごほうび（docs/praise-voice-1125.md）。tools/teacher_voice_build.py が tools/teacher_voice_script.json と app/teacher_voice/*.m4a から作る（手で直さない）。voices：id → t（takadai＝KODAI先生・yusuke＝YUSUKE先生）・r（レア度1〜5）・m（きっかけ）・text（アプリに出す言葉＝録音で実際に言った言葉）・src・dur（秒）。moments：台本にない場面（講座の席・出席）で使う声。milestones：感情スピーキングの回数の段（録音なし・吹き出しの文だけ。docs/english-reps-1107.md）。",
+ "teachers": {
+  "yusuke": {
+   "name": "YUSUKE先生"
+  },
+  "takadai": {
+   "name": "KODAI先生"
+  }
+ },
+ "voices": {
+  "K001": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "ナイスです！",
+   "src": "teacher_voice/k001.m4a",
+   "dur": 0.94
+  },
+  "K002": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "いいですねー！",
+   "src": "teacher_voice/k002.m4a",
+   "dur": 0.93
+  },
+  "K003": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "Good job!",
+   "src": "teacher_voice/k003.m4a",
+   "dur": 1.09
+  },
+  "K004": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "おつかれさまでした！",
+   "src": "teacher_voice/k004.m4a",
+   "dur": 1.13
+  },
+  "K005": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "ナイストライです！",
+   "src": "teacher_voice/k005.m4a",
+   "dur": 1.25
+  },
+  "K006": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "今日もやりましたね！",
+   "src": "teacher_voice/k006.m4a",
+   "dur": 1.32
+  },
+  "K007": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "さすがです！",
+   "src": "teacher_voice/k007.m4a",
+   "dur": 0.93
+  },
+  "K008": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "Keep going!",
+   "src": "teacher_voice/k008.m4a",
+   "dur": 1.28
+  },
+  "K009": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "その調子です！",
+   "src": "teacher_voice/k009.m4a",
+   "dur": 0.99
+  },
+  "K010": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "いい声出てましたよ！",
+   "src": "teacher_voice/k010.m4a",
+   "dur": 1.62
+  },
+  "K011": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "今日の一歩、ナイスです！",
+   "src": "teacher_voice/k011.m4a",
+   "dur": 1.92
+  },
+  "K012": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "また一つ、積み上がりましたね！",
+   "src": "teacher_voice/k012.m4a",
+   "dur": 2.04
+  },
+  "K013": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "よし、今日もクリアです！",
+   "src": "teacher_voice/k013.m4a",
+   "dur": 2.01
+  },
+  "K014": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "Nice work!",
+   "src": "teacher_voice/k014.m4a",
+   "dur": 0.98
+  },
+  "K015": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "いい練習でしたねー！",
+   "src": "teacher_voice/k015.m4a",
+   "dur": 1.28
+  },
+  "K016": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "発音、いい感じです！",
+   "src": "teacher_voice/k016.m4a",
+   "dur": 1.54
+  },
+  "K017": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "ちゃんと続いてますね！",
+   "src": "teacher_voice/k017.m4a",
+   "dur": 1.38
+  },
+  "K018": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "よくできました！",
+   "src": "teacher_voice/k018.m4a",
+   "dur": 1.03
+  },
+  "K019": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "Well done!",
+   "src": "teacher_voice/k019.m4a",
+   "dur": 1.15
+  },
+  "K020": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "リズム、よかったですよ！",
+   "src": "teacher_voice/k020.m4a",
+   "dur": 1.45
+  },
+  "K021": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "いいリアクションでした！",
+   "src": "teacher_voice/k021.m4a",
+   "dur": 1.24
+  },
+  "K022": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "自然に話せてましたね！",
+   "src": "teacher_voice/k022.m4a",
+   "dur": 1.5
+  },
+  "K023": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "今日もありがとうございます！",
+   "src": "teacher_voice/k023.m4a",
+   "dur": 1.58
+  },
+  "K024": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "Great!",
+   "src": "teacher_voice/k024.m4a",
+   "dur": 0.86
+  },
+  "K025": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "ナイス音読です！",
+   "src": "teacher_voice/k025.m4a",
+   "dur": 1.09
+  },
+  "K026": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "声に出したの、えらいです！",
+   "src": "teacher_voice/k026.m4a",
+   "dur": 1.52
+  },
+  "K027": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "いい感じに仕上がってきてます！",
+   "src": "teacher_voice/k027.m4a",
+   "dur": 1.68
+  },
+  "K028": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "その一言が大事なんです！",
+   "src": "teacher_voice/k028.m4a",
+   "dur": 1.92
+  },
+  "K029": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "Perfect!",
+   "src": "teacher_voice/k029.m4a",
+   "dur": 0.88
+  },
+  "K030": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "今日もいい英語でした！",
+   "src": "teacher_voice/k030.m4a",
+   "dur": 1.23
+  },
+  "K031": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "You did it!",
+   "src": "teacher_voice/k031.m4a",
+   "dur": 1.21
+  },
+  "K032": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "よく頑張りましたね！",
+   "src": "teacher_voice/k032.m4a",
+   "dur": 1.23
+  },
+  "K033": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "いいペースです！",
+   "src": "teacher_voice/k033.m4a",
+   "dur": 1.18
+  },
+  "K034": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "ちょっとずつ、確実にです！",
+   "src": "teacher_voice/k034.m4a",
+   "dur": 1.96
+  },
+  "K035": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "今日の練習、花丸です！",
+   "src": "teacher_voice/k035.m4a",
+   "dur": 2.09
+  },
+  "K036": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "Excellent!",
+   "src": "teacher_voice/k036.m4a",
+   "dur": 0.96
+  },
+  "K037": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "声、よく出てましたよ！",
+   "src": "teacher_voice/k037.m4a",
+   "dur": 1.56
+  },
+  "K038": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "スムーズでしたねー！",
+   "src": "teacher_voice/k038.m4a",
+   "dur": 1.31
+  },
+  "K039": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "迷わず言えてましたね！",
+   "src": "teacher_voice/k039.m4a",
+   "dur": 1.89
+  },
+  "K040": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "Nice!",
+   "src": "teacher_voice/k040.m4a",
+   "dur": 0.73
+  },
+  "K041": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "ナイスチャレンジです！",
+   "src": "teacher_voice/k041.m4a",
+   "dur": 1.21
+  },
+  "K042": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "今日も前進です！",
+   "src": "teacher_voice/k042.m4a",
+   "dur": 1.12
+  },
+  "K043": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "いい集中でした！",
+   "src": "teacher_voice/k043.m4a",
+   "dur": 1.26
+  },
+  "K044": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "That's it!",
+   "src": "teacher_voice/k044.m4a",
+   "dur": 1.39
+  },
+  "K045": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "いい流れです！",
+   "src": "teacher_voice/k045.m4a",
+   "dur": 1.65
+  },
+  "K046": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "ちゃんと伝わってましたよ！",
+   "src": "teacher_voice/k046.m4a",
+   "dur": 2.15
+  },
+  "K047": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "堂々と話せてましたね！",
+   "src": "teacher_voice/k047.m4a",
+   "dur": 2.25
+  },
+  "K048": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "Way to go!",
+   "src": "teacher_voice/k048.m4a",
+   "dur": 1.68
+  },
+  "K049": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "いい練習量です！",
+   "src": "teacher_voice/k049.m4a",
+   "dur": 1.24
+  },
+  "K050": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "Good！その感じです！",
+   "src": "teacher_voice/k050.m4a",
+   "dur": 2.49
+  },
+  "K051": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "1日5分、続いてますね！",
+   "src": "teacher_voice/k051.m4a",
+   "dur": 2.32
+  },
+  "K052": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "英語の時間、ナイスです！",
+   "src": "teacher_voice/k052.m4a",
+   "dur": 2.29
+  },
+  "K053": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "You're getting better!",
+   "src": "teacher_voice/k053.m4a",
+   "dur": 2.6
+  },
+  "K054": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "今日も来てくれましたね！",
+   "src": "teacher_voice/k054.m4a",
+   "dur": 2.05
+  },
+  "K055": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "抑揚、ついてきましたね！",
+   "src": "teacher_voice/k055.m4a",
+   "dur": 2.08
+  },
+  "K056": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "Love it!",
+   "src": "teacher_voice/k056.m4a",
+   "dur": 1.35
+  },
+  "K057": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "リアクション、ばっちりです！",
+   "src": "teacher_voice/k057.m4a",
+   "dur": 2.04
+  },
+  "K058": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "いいですね、Keep it up!",
+   "src": "teacher_voice/k058.m4a",
+   "dur": 2.36
+  },
+  "K059": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "また上手になってます！",
+   "src": "teacher_voice/k059.m4a",
+   "dur": 1.66
+  },
+  "K060": {
+   "t": "takadai",
+   "r": 1,
+   "m": "draw",
+   "text": "Nice job today!",
+   "src": "teacher_voice/k060.m4a",
+   "dur": 1.95
+  },
+  "K061": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "今日の練習、声がよく出てました！この感じで続けていきましょうー！",
+   "src": "teacher_voice/k061.m4a",
+   "dur": 4.47
+  },
+  "K062": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "一回一回の練習が、ちゃんと英語力に変わってますよ。Good jobです！",
+   "src": "teacher_voice/k062.m4a",
+   "dur": 5.01
+  },
+  "K063": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "前より言葉が出てくるのが早くなってますね。いい感じです！",
+   "src": "teacher_voice/k063.m4a",
+   "dur": 4.05
+  },
+  "K064": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "今日も英語に触れましたね。この積み重ねが大きな差になります！",
+   "src": "teacher_voice/k064.m4a",
+   "dur": 4.38
+  },
+  "K065": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "ちょっと難しいところにもチャレンジできてましたね。ナイストライです！",
+   "src": "teacher_voice/k065.m4a",
+   "dur": 3.98
+  },
+  "K066": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "完璧じゃなくて大丈夫です。声に出したことが一番大事なんです！",
+   "src": "teacher_voice/k066.m4a",
+   "dur": 4.63
+  },
+  "K067": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "発音、丁寧でしたねー！その丁寧さ、ちゃんと伝わりますよ！",
+   "src": "teacher_voice/k067.m4a",
+   "dur": 4.5
+  },
+  "K068": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "リアクションが自然になってきました。会話がぐっと楽しくなりますよ！",
+   "src": "teacher_voice/k068.m4a",
+   "dur": 4.55
+  },
+  "K069": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "沈黙が減ってきてますね！これは大きな成長です！",
+   "src": "teacher_voice/k069.m4a",
+   "dur": 3.94
+  },
+  "K070": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "今日も自分の言葉で話せてましたね。それが一番の力になります！",
+   "src": "teacher_voice/k070.m4a",
+   "dur": 4.87
+  },
+  "K071": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "いい練習でした！次は感情も少し乗せてみましょう。もっとよくなりますよ！",
+   "src": "teacher_voice/k071.m4a",
+   "dur": 5.32
+  },
+  "K072": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "言いたいこと、ちゃんと伝わってましたよ。自信持っていきましょう！",
+   "src": "teacher_voice/k072.m4a",
+   "dur": 4.15
+  },
+  "K073": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "Good job! 今日の練習で、また一つ自分の英語が増えましたね！",
+   "src": "teacher_voice/k073.m4a",
+   "dur": 5.02
+  },
+  "K074": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "間の取り方がよくなってます！聞きやすい英語になってきました！",
+   "src": "teacher_voice/k074.m4a",
+   "dur": 4.35
+  },
+  "K075": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "今日も5分、英語の時間を作れましたね。それ、すごく大事なことです！",
+   "src": "teacher_voice/k075.m4a",
+   "dur": 4.22
+  },
+  "K076": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "練習のあとって気持ちいいですよね。この感覚を覚えておいてください！",
+   "src": "teacher_voice/k076.m4a",
+   "dur": 4.41
+  },
+  "K077": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "少しずつ、でも確実に上手になってます。僕にはちゃんと分かりますよ！",
+   "src": "teacher_voice/k077.m4a",
+   "dur": 4.67
+  },
+  "K078": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "Nice try! 間違えてもいいんです。そこから一番伸びますから！",
+   "src": "teacher_voice/k078.m4a",
+   "dur": 4.42
+  },
+  "K079": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "一文つけ足せてましたね！それだけで会話が一気に広がります！",
+   "src": "teacher_voice/k079.m4a",
+   "dur": 4.53
+  },
+  "K080": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "You're doing great! 今日の練習も、未来のあなたを助けてくれますよ！",
+   "src": "teacher_voice/k080.m4a",
+   "dur": 4.82
+  },
+  "K081": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "英語って、やった分だけちゃんと返ってきます。今日もナイスでした！",
+   "src": "teacher_voice/k081.m4a",
+   "dur": 4.07
+  },
+  "K082": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "リズムに乗って話せてましたね！その感覚、忘れないでください！",
+   "src": "teacher_voice/k082.m4a",
+   "dur": 4.43
+  },
+  "K083": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "自分で考えた英語を口に出す。これができる人は強いです！",
+   "src": "teacher_voice/k083.m4a",
+   "dur": 4.32
+  },
+  "K084": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "いい集中力でした！短い時間でも、中身が濃い練習でしたね！",
+   "src": "teacher_voice/k084.m4a",
+   "dur": 4.54
+  },
+  "K085": {
+   "t": "takadai",
+   "r": 2,
+   "m": "morning",
+   "text": "朝から英語、ナイスです！一日のスタートが最高ですね！",
+   "src": "teacher_voice/k085.m4a",
+   "dur": 4.3
+  },
+  "K086": {
+   "t": "takadai",
+   "r": 2,
+   "m": "morning",
+   "text": "おはようございます！朝の練習は頭に入りやすいので、いい選択ですよ！",
+   "src": "teacher_voice/k086.m4a",
+   "dur": 4.99
+  },
+  "K087": {
+   "t": "takadai",
+   "r": 2,
+   "m": "morning",
+   "text": "朝一番の英語、えらいです！今日一日、いい日になりますよ！",
+   "src": "teacher_voice/k087.m4a",
+   "dur": 5.38
+  },
+  "K088": {
+   "t": "takadai",
+   "r": 2,
+   "m": "night",
+   "text": "夜遅くまでお疲れさまでした！その一歩、ちゃんと届いてますよ！",
+   "src": "teacher_voice/k088.m4a",
+   "dur": 4.42
+  },
+  "K089": {
+   "t": "takadai",
+   "r": 2,
+   "m": "night",
+   "text": "忙しい一日の最後に英語の時間。本当にナイスです！ゆっくり休んでくださいね！",
+   "src": "teacher_voice/k089.m4a",
+   "dur": 6.5
+  },
+  "K090": {
+   "t": "takadai",
+   "r": 2,
+   "m": "night",
+   "text": "夜の練習、お疲れさまです！寝る前の英語は記憶に残りやすいですよ！",
+   "src": "teacher_voice/k090.m4a",
+   "dur": 4.59
+  },
+  "K091": {
+   "t": "takadai",
+   "r": 2,
+   "m": "weekend",
+   "text": "週末も英語、さすがです！休みの日にやれる人は伸びます！",
+   "src": "teacher_voice/k091.m4a",
+   "dur": 5.04
+  },
+  "K092": {
+   "t": "takadai",
+   "r": 2,
+   "m": "weekend",
+   "text": "お休みの日もやりましたねー！Keep going! また来週もいきましょう！",
+   "src": "teacher_voice/k092.m4a",
+   "dur": 6.68
+  },
+  "K093": {
+   "t": "takadai",
+   "r": 2,
+   "m": "streak_3",
+   "text": "3日連続ですね！三日坊主、もう超えましたよ！",
+   "src": "teacher_voice/k093.m4a",
+   "dur": 3.96
+  },
+  "K094": {
+   "t": "takadai",
+   "r": 2,
+   "m": "streak_3",
+   "text": "3日続きました！ここからが習慣づくりの本番です。いきましょうー！",
+   "src": "teacher_voice/k094.m4a",
+   "dur": 5.57
+  },
+  "K095": {
+   "t": "takadai",
+   "r": 2,
+   "m": "first_diary",
+   "text": "はじめての英語日記、ナイスです！思ったことを英語にする力、ここから伸びていきますよ！",
+   "src": "teacher_voice/k095.m4a",
+   "dur": 6.45
+  },
+  "K096": {
+   "t": "takadai",
+   "r": 2,
+   "m": "first_diary",
+   "text": "日記デビューですね！完璧な文じゃなくて大丈夫。書いたことがすごいんです！",
+   "src": "teacher_voice/k096.m4a",
+   "dur": 5.91
+  },
+  "K097": {
+   "t": "takadai",
+   "r": 2,
+   "m": "first_read",
+   "text": "はじめての音読チェック、お疲れさまでした！声に出す練習が、発音を一番伸ばしてくれますよ！",
+   "src": "teacher_voice/k097.m4a",
+   "dur": 6.35
+  },
+  "K098": {
+   "t": "takadai",
+   "r": 2,
+   "m": "first_drill",
+   "text": "1分感情スピーチ、はじめての挑戦ナイスです！気持ちを乗せると英語は一気に伝わりますよ！",
+   "src": "teacher_voice/k098.m4a",
+   "dur": 7.31
+  },
+  "K099": {
+   "t": "takadai",
+   "r": 2,
+   "m": "pb_any",
+   "text": "自己ベスト更新です！昨日の自分、超えましたね！",
+   "src": "teacher_voice/k099.m4a",
+   "dur": 4.0
+  },
+  "K100": {
+   "t": "takadai",
+   "r": 2,
+   "m": "pb_any",
+   "text": "また記録が伸びましたね！練習の成果がちゃんと出てますよ！",
+   "src": "teacher_voice/k100.m4a",
+   "dur": 5.31
+  },
+  "K101": {
+   "t": "takadai",
+   "r": 2,
+   "m": "pb_react_fast",
+   "text": "2秒応答、速くなってます！反射で英語が出てくる感じ、つかめてきましたね！",
+   "src": "teacher_voice/k101.m4a",
+   "dur": 5.45
+  },
+  "K102": {
+   "t": "takadai",
+   "r": 2,
+   "m": "pb_talk_long",
+   "text": "AI会話、前より長く話せましたね！会話を続ける力がついてきてます！",
+   "src": "teacher_voice/k102.m4a",
+   "dur": 5.2
+  },
+  "K103": {
+   "t": "takadai",
+   "r": 2,
+   "m": "pb_diary_words",
+   "text": "日記の語数、増えてます！書ける量が増えると、話せる量も増えますよ！",
+   "src": "teacher_voice/k103.m4a",
+   "dur": 4.8
+  },
+  "K104": {
+   "t": "takadai",
+   "r": 2,
+   "m": "pb_week_minutes",
+   "text": "今週の練習時間、記録更新です！時間をつくる力、素晴らしいです！",
+   "src": "teacher_voice/k104.m4a",
+   "dur": 5.75
+  },
+  "K105": {
+   "t": "takadai",
+   "r": 2,
+   "m": "pb_read_wpm",
+   "text": "音読のスピード上がってますね！英語のリズムが体に入ってきてますよ！",
+   "src": "teacher_voice/k105.m4a",
+   "dur": 5.33
+  },
+  "K106": {
+   "t": "takadai",
+   "r": 2,
+   "m": "pb_drill_reps",
+   "text": "1分スピーチの回数、自己ベストです！口が英語に慣れてきてますね！",
+   "src": "teacher_voice/k106.m4a",
+   "dur": 4.71
+  },
+  "K107": {
+   "t": "takadai",
+   "r": 2,
+   "m": "back",
+   "text": "おかえりなさい！また英語の時間をつくってくれて嬉しいです！",
+   "src": "teacher_voice/k107.m4a",
+   "dur": 4.05
+  },
+  "K108": {
+   "t": "takadai",
+   "r": 2,
+   "m": "back",
+   "text": "久しぶりですね！大丈夫、ここからまた一緒にいきましょうー！",
+   "src": "teacher_voice/k108.m4a",
+   "dur": 3.8
+  },
+  "K109": {
+   "t": "takadai",
+   "r": 2,
+   "m": "used_phrase",
+   "text": "教材の表現、使えてましたね！覚えた英語を実際に使う、これが一番の近道です！",
+   "src": "teacher_voice/k109.m4a",
+   "dur": 7.18
+  },
+  "K110": {
+   "t": "takadai",
+   "r": 2,
+   "m": "share_up",
+   "text": "話す割合、増えてきてますよ！どんどん自分から話していきましょう！",
+   "src": "teacher_voice/k110.m4a",
+   "dur": 5.15
+  },
+  "K111": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "相手の話を聞いて、ちゃんと返せてましたね。それが本当の会話力です！",
+   "src": "teacher_voice/k111.m4a",
+   "dur": 4.71
+  },
+  "K112": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "質問の前に一言つけられてましたね！会話がぐっと自然になります！",
+   "src": "teacher_voice/k112.m4a",
+   "dur": 4.51
+  },
+  "K113": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "今日の英語、昨日より少しだけ上手でした。その「少し」が大事なんです！",
+   "src": "teacher_voice/k113.m4a",
+   "dur": 5.87
+  },
+  "K114": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "いい声のトーンでした！明るい声は、それだけで相手に伝わりますよ！",
+   "src": "teacher_voice/k114.m4a",
+   "dur": 4.62
+  },
+  "K115": {
+   "t": "takadai",
+   "r": 2,
+   "m": "draw",
+   "text": "今日もお疲れさまでした！明日もまた、ここで待ってますね！",
+   "src": "teacher_voice/k115.m4a",
+   "dur": 3.44
+  },
+  "K116": {
+   "t": "takadai",
+   "r": 3,
+   "m": "pb_react_fast",
+   "text": "2秒応答、自己ベスト更新です！考えるより先に英語が出てくる、この感覚が会話ではすごく大事なんです。頭の中で英語が回りはじめてますよ！",
+   "src": "teacher_voice/k116.m4a",
+   "dur": 10.77
+  },
+  "K117": {
+   "t": "takadai",
+   "r": 3,
+   "m": "pb_react_fast",
+   "text": "応答のスピード、また速くなりましたね！最初の頃と比べたら全然違います。相手を待たせない英語、身についてきてますよ！",
+   "src": "teacher_voice/k117.m4a",
+   "dur": 9.11
+  },
+  "K118": {
+   "t": "takadai",
+   "r": 3,
+   "m": "pb_talk_long",
+   "text": "AI会話の長さ、自己ベストです！話が途切れずに続けられたのは、リアクションと質問ができてる証拠です。会話の力、ぐんぐん伸びてますね！",
+   "src": "teacher_voice/k118.m4a",
+   "dur": 10.03
+  },
+  "K119": {
+   "t": "takadai",
+   "r": 3,
+   "m": "pb_talk_long",
+   "text": "前回より長く話せましたね！長く話せるってことは、それだけ言葉が出てくるってことです。Good jobです、本当に！",
+   "src": "teacher_voice/k119.m4a",
+   "dur": 7.94
+  },
+  "K120": {
+   "t": "takadai",
+   "r": 3,
+   "m": "pb_diary_words",
+   "text": "日記の語数、記録更新です！書ける量が増えると、頭の中の英語の引き出しも増えていきます。毎日の出来事を英語にする力、ついてきましたね！",
+   "src": "teacher_voice/k120.m4a",
+   "dur": 9.62
+  },
+  "K121": {
+   "t": "takadai",
+   "r": 3,
+   "m": "pb_diary_words",
+   "text": "英語日記、前より長く書けましたね！自分の気持ちまで英語にできてるのが素晴らしいです。それ、そのまま話す力になりますよ！",
+   "src": "teacher_voice/k121.m4a",
+   "dur": 8.65
+  },
+  "K122": {
+   "t": "takadai",
+   "r": 3,
+   "m": "pb_week_minutes",
+   "text": "今週の練習時間、自己ベスト更新です！時間って、つくろうと思わないとつくれないんですよね。その意識が、もう成果を出す人の考え方です！",
+   "src": "teacher_voice/k122.m4a",
+   "dur": 10.47
+  },
+  "K123": {
+   "t": "takadai",
+   "r": 3,
+   "m": "pb_week_minutes",
+   "text": "週の練習時間、記録更新ですね！量は才能を超えます。この一週間の自分を、ぜひ褒めてあげてください！",
+   "src": "teacher_voice/k123.m4a",
+   "dur": 7.83
+  },
+  "K124": {
+   "t": "takadai",
+   "r": 3,
+   "m": "pb_read_wpm",
+   "text": "音読の速さ、自己ベストです！スピードが上がっても崩れてないのがすごいです。英語のリズムが体に入ってきてますね！",
+   "src": "teacher_voice/k124.m4a",
+   "dur": 7.68
+  },
+  "K125": {
+   "t": "takadai",
+   "r": 3,
+   "m": "pb_read_wpm",
+   "text": "音読、どんどんスムーズになってますね！コツコツ積み重ねてきた成果が、しっかり数字に出てますよ。この調子です！",
+   "src": "teacher_voice/k125.m4a",
+   "dur": 7.63
+  },
+  "K126": {
+   "t": "takadai",
+   "r": 3,
+   "m": "pb_drill_reps",
+   "text": "1分感情スピーチ、回数の自己ベストです！口が英語の形に慣れてくると、本番でもスッと言葉が出てきます。ナイスです！",
+   "src": "teacher_voice/k126.m4a",
+   "dur": 9.91
+  },
+  "K127": {
+   "t": "takadai",
+   "r": 3,
+   "m": "pb_drill_reps",
+   "text": "スピーチの回数、また伸びましたね！感情を込めて話す練習、地味だけど一番効きます。その積み重ね、最高です！",
+   "src": "teacher_voice/k127.m4a",
+   "dur": 9.48
+  },
+  "K128": {
+   "t": "takadai",
+   "r": 3,
+   "m": "streak_7",
+   "text": "7日連続、達成です！一週間毎日って、本当にすごいことなんです。英語が生活の一部になってきましたね！",
+   "src": "teacher_voice/k128.m4a",
+   "dur": 7.75
+  },
+  "K129": {
+   "t": "takadai",
+   "r": 3,
+   "m": "streak_7",
+   "text": "一週間、毎日やりきりましたね！続けられたこと自体が、もう一つの実力です。来週もこの調子でいきましょうー！",
+   "src": "teacher_voice/k129.m4a",
+   "dur": 8.04
+  },
+  "K130": {
+   "t": "takadai",
+   "r": 3,
+   "m": "streak_7",
+   "text": "7日連続、Good jobです！毎日声に出してると、自分でも気づかないうちに発音が変わってきますよ。楽しみにしててください！",
+   "src": "teacher_voice/k130.m4a",
+   "dur": 7.94
+  },
+  "K131": {
+   "t": "takadai",
+   "r": 3,
+   "m": "streak_14",
+   "text": "14日連続です！2週間続けられる人って、実はそんなに多くないんです。本当に、さすがです！",
+   "src": "teacher_voice/k131.m4a",
+   "dur": 6.29
+  },
+  "K132": {
+   "t": "takadai",
+   "r": 3,
+   "m": "streak_14",
+   "text": "2週間毎日、英語を続けましたね！ここまで来ると、やらない日の方が気持ち悪くなってきますよね。いい習慣です！",
+   "src": "teacher_voice/k132.m4a",
+   "dur": 7.43
+  },
+  "K133": {
+   "t": "takadai",
+   "r": 3,
+   "m": "streak_21",
+   "text": "21日連続、おめでとうございます！習慣になるまでに必要って言われるのが21日なんです。もう、英語が当たり前になってますね！",
+   "src": "teacher_voice/k133.m4a",
+   "dur": 8.44
+  },
+  "K134": {
+   "t": "takadai",
+   "r": 3,
+   "m": "streak_21",
+   "text": "21日、続きましたね！ここまで来たら、もう習慣です。あとはこの習慣が、どんどん力に変わっていきますよ！",
+   "src": "teacher_voice/k134.m4a",
+   "dur": 7.79
+  },
+  "K135": {
+   "t": "takadai",
+   "r": 3,
+   "m": "first_talk",
+   "text": "はじめてのAI会話、お疲れさまでした！最初は誰でも緊張します。それでも話してみたこと、本当にナイスチャレンジです！",
+   "src": "teacher_voice/k135.m4a",
+   "dur": 7.6
+  },
+  "K136": {
+   "t": "takadai",
+   "r": 3,
+   "m": "first_talk",
+   "text": "AI会話デビュー、おめでとうございます！うまく話せたかどうかより、まず話してみたことが一番大事なんです。ここからどんどん楽しくなりますよ！",
+   "src": "teacher_voice/k136.m4a",
+   "dur": 9.64
+  },
+  "K137": {
+   "t": "takadai",
+   "r": 3,
+   "m": "first_talk",
+   "text": "はじめての英会話練習、ナイスです！一言でも英語で返せたら、それはもう会話です。次はもう一言、つけ足してみましょう！",
+   "src": "teacher_voice/k137.m4a",
+   "dur": 8.1
+  },
+  "K138": {
+   "t": "takadai",
+   "r": 3,
+   "m": "back",
+   "text": "おかえりなさい！また練習を始めてくれて、僕も嬉しいです。英語の習慣は、また今日から積み上げていけば大丈夫ですよ！",
+   "src": "teacher_voice/k138.m4a",
+   "dur": 7.94
+  },
+  "K139": {
+   "t": "takadai",
+   "r": 3,
+   "m": "back",
+   "text": "久しぶりの練習、ナイスです！少し間が空いても、やってきたことは消えてないですからね。ここからまた一緒にいきましょうー！",
+   "src": "teacher_voice/k139.m4a",
+   "dur": 8.49
+  },
+  "K140": {
+   "t": "takadai",
+   "r": 3,
+   "m": "back",
+   "text": "戻ってきてくれましたね！一度止まっても、もう一度始められる人が最後は伸びるんです。今日の一歩、最高です！",
+   "src": "teacher_voice/k140.m4a",
+   "dur": 7.21
+  },
+  "K141": {
+   "t": "takadai",
+   "r": 3,
+   "m": "draw",
+   "text": "今日の練習、すごくよかったです！前より自然に言葉が出てくるようになってますね。積み重ねが、ちゃんと形になってきてますよ！",
+   "src": "teacher_voice/k141.m4a",
+   "dur": 7.53
+  },
+  "K142": {
+   "t": "takadai",
+   "r": 3,
+   "m": "draw",
+   "text": "英語で自分のことを話せるって、本当に大きな武器なんです。今日もその武器を磨けましたね。Good jobです！",
+   "src": "teacher_voice/k142.m4a",
+   "dur": 6.76
+  },
+  "K143": {
+   "t": "takadai",
+   "r": 3,
+   "m": "draw",
+   "text": "今日の英語、聞いていて気持ちよかったです！自信を持って話してる感じが伝わってきました。その感覚、大事にしてください！",
+   "src": "teacher_voice/k143.m4a",
+   "dur": 7.16
+  },
+  "K144": {
+   "t": "takadai",
+   "r": 3,
+   "m": "draw",
+   "text": "間違えることを怖がらずに話せてましたね。それができる人が、一番早く上手になります。ナイスチャレンジです！",
+   "src": "teacher_voice/k144.m4a",
+   "dur": 7.11
+  },
+  "K145": {
+   "t": "takadai",
+   "r": 3,
+   "m": "draw",
+   "text": "安全な表現だけに逃げずに、少し難しい言い方にもチャレンジしてましたね。そうやって使える英語が増えていくんです！",
+   "src": "teacher_voice/k145.m4a",
+   "dur": 7.59
+  },
+  "K146": {
+   "t": "takadai",
+   "r": 3,
+   "m": "draw",
+   "text": "今日は感情がしっかり乗ってましたね！英語は気持ちが乗った瞬間に、ぐっと伝わるようになります。いい練習でした！",
+   "src": "teacher_voice/k146.m4a",
+   "dur": 7.32
+  },
+  "K147": {
+   "t": "takadai",
+   "r": 3,
+   "m": "draw",
+   "text": "前に練習した表現が、自然に出てきてましたね！覚えたことが自分の言葉になってる証拠です。さすがです！",
+   "src": "teacher_voice/k147.m4a",
+   "dur": 7.88
+  },
+  "K148": {
+   "t": "takadai",
+   "r": 3,
+   "m": "draw",
+   "text": "発音、本当によくなってます！最初の頃と聞き比べたら、きっと自分でもびっくりしますよ。Keep going!",
+   "src": "teacher_voice/k148.m4a",
+   "dur": 7.03
+  },
+  "K149": {
+   "t": "takadai",
+   "r": 3,
+   "m": "draw",
+   "text": "練習を続けてると、ある日突然「あ、話せる」って瞬間が来るんです。その日はもう近いですよ！",
+   "src": "teacher_voice/k149.m4a",
+   "dur": 6.82
+  },
+  "K150": {
+   "t": "takadai",
+   "r": 3,
+   "m": "draw",
+   "text": "今日もやりきりましたね！1日5分でも、1年続けたら30時間です。その差は、ちゃんと出てきますよ！",
+   "src": "teacher_voice/k150.m4a",
+   "dur": 6.88
+  },
+  "K151": {
+   "t": "takadai",
+   "r": 3,
+   "m": "draw",
+   "text": "相手の話をちゃんと聞いて、反応してから話せてましたね。それが一番自然な会話の流れです。素晴らしいです！",
+   "src": "teacher_voice/k151.m4a",
+   "dur": 8.1
+  },
+  "K152": {
+   "t": "takadai",
+   "r": 3,
+   "m": "draw",
+   "text": "今日の英語、ちゃんと伝わってましたよ。伝わる英語が話せたら、それはもう100点なんです！",
+   "src": "teacher_voice/k152.m4a",
+   "dur": 5.97
+  },
+  "K153": {
+   "t": "takadai",
+   "r": 3,
+   "m": "draw",
+   "text": "自分の体験を英語で話せてましたね！自分の話を英語にするのが、一番自分の英語になる近道です。ナイスです！",
+   "src": "teacher_voice/k153.m4a",
+   "dur": 8.94
+  },
+  "K154": {
+   "t": "takadai",
+   "r": 3,
+   "m": "draw",
+   "text": "練習のたびに、少しずつ迷いが減ってきてますね。考えすぎずに口が動く、いい状態です！",
+   "src": "teacher_voice/k154.m4a",
+   "dur": 7.05
+  },
+  "K155": {
+   "t": "takadai",
+   "r": 3,
+   "m": "draw",
+   "text": "You're getting better and better! 本当に、日に日によくなってますよ。今日もお疲れさまでした！",
+   "src": "teacher_voice/k155.m4a",
+   "dur": 6.96
+  },
+  "K156": {
+   "t": "takadai",
+   "r": 3,
+   "m": "week_goal",
+   "text": "今週の目標、達成です！決めたことを決めた通りにやる。これができると、英語はちゃんと伸びていきます！",
+   "src": "teacher_voice/k156.m4a",
+   "dur": 6.62
+  },
+  "K157": {
+   "t": "takadai",
+   "r": 3,
+   "m": "week_goal",
+   "text": "週の目標クリアですね！一週間がんばった自分に、拍手を送ってあげてください。来週も一緒にいきましょうー！",
+   "src": "teacher_voice/k157.m4a",
+   "dur": 7.06
+  },
+  "K158": {
+   "t": "takadai",
+   "r": 3,
+   "m": "week_goal",
+   "text": "今週もやりきりましたね！毎週こうやって積み上げていけば、3か月後には別人みたいに話せてますよ！",
+   "src": "teacher_voice/k158.m4a",
+   "dur": 6.6
+  },
+  "K159": {
+   "t": "takadai",
+   "r": 3,
+   "m": "share_up",
+   "text": "話す割合、ぐんと上がりましたね！聞くだけじゃなく、自分から話せる。それが英語の会話の本当の楽しさです！",
+   "src": "teacher_voice/k159.m4a",
+   "dur": 7.28
+  },
+  "K160": {
+   "t": "takadai",
+   "r": 3,
+   "m": "share_up",
+   "text": "今日は自分から話す時間が長かったですね！答えに一文つけ足せてる証拠です。その一文が、会話を広げてくれるんです！",
+   "src": "teacher_voice/k160.m4a",
+   "dur": 8.08
+  },
+  "K161": {
+   "t": "takadai",
+   "r": 4,
+   "m": "streak_30",
+   "text": "30日連続、達成です！一か月、一日も休まず英語を続けたんですね。これはもう、立派な習慣です。ここまで続けてきたあなたを、本当に誇りに思います！",
+   "src": "teacher_voice/k161.m4a",
+   "dur": 9.89
+  },
+  "K162": {
+   "t": "takadai",
+   "r": 4,
+   "m": "streak_30",
+   "text": "30日連続、おめでとうございます！一か月前の自分と比べてみてください。口から出てくる英語、絶対に変わってますよ。Good jobなんてもんじゃないです、最高です！",
+   "src": "teacher_voice/k162.m4a",
+   "dur": 9.98
+  },
+  "K163": {
+   "t": "takadai",
+   "r": 4,
+   "m": "streak_30",
+   "text": "一か月、毎日続けましたね！正直、ここまで続けられる人は本当にひとにぎりです。この30日間は、これからのあなたの英語をずっと支えてくれますよ！",
+   "src": "teacher_voice/k163.m4a",
+   "dur": 9.59
+  },
+  "K164": {
+   "t": "takadai",
+   "r": 4,
+   "m": "streak_50",
+   "text": "50日連続です！いやー、すごい。50日って、もう英語が生活の一部ですよね。積み重ねてきたものが、確かな力になってます。本当にさすがです！",
+   "src": "teacher_voice/k164.m4a",
+   "dur": 10.34
+  },
+  "K165": {
+   "t": "takadai",
+   "r": 4,
+   "m": "streak_50",
+   "text": "50日連続、おめでとうございます！毎日声に出してきた英語が、ちゃんと自分の言葉になってきてますよ。ここまで来たら、もう止まらないですね！",
+   "src": "teacher_voice/k165.m4a",
+   "dur": 8.63
+  },
+  "K166": {
+   "t": "takadai",
+   "r": 4,
+   "m": "streak_50",
+   "text": "50日、一日も欠かさず練習しましたね！量は才能を超える、まさにそれを体現してます。この調子で100日、一緒に目指しましょうー！",
+   "src": "teacher_voice/k166.m4a",
+   "dur": 9.29
+  },
+  "K167": {
+   "t": "takadai",
+   "r": 4,
+   "m": "pb_react_fast",
+   "text": "2秒応答、また記録更新です！最初の頃は考えてから話してたのに、今は反射で英語が出てきてますよね。これは本当に大きな成長です。めちゃくちゃいいですよ！",
+   "src": "teacher_voice/k167.m4a",
+   "dur": 10.89
+  },
+  "K168": {
+   "t": "takadai",
+   "r": 4,
+   "m": "pb_talk_long",
+   "text": "AI会話、過去最長です！ここまで長く話し続けられるようになったのは、相づち、リアクション、質問、全部がそろってきた証拠です。もう立派に会話できてますよ！",
+   "src": "teacher_voice/k168.m4a",
+   "dur": 10.24
+  },
+  "K169": {
+   "t": "takadai",
+   "r": 4,
+   "m": "pb_diary_words",
+   "text": "英語日記、過去最高の語数です！これだけの量を英語で書けるってことは、頭の中でもう英語で考えられてるってことなんです。本当にすごいです！",
+   "src": "teacher_voice/k169.m4a",
+   "dur": 8.69
+  },
+  "K170": {
+   "t": "takadai",
+   "r": 4,
+   "m": "pb_week_minutes",
+   "text": "週の練習時間、過去最高です！これだけの時間を英語に使えたこと、本当に素晴らしいです。この一週間は、後から振り返ったときに「あの週が転機だった」ってなりますよ！",
+   "src": "teacher_voice/k170.m4a",
+   "dur": 12.2
+  },
+  "K171": {
+   "t": "takadai",
+   "r": 4,
+   "m": "pb_read_wpm",
+   "text": "音読の速さ、過去最高です！しかも速いだけじゃなくて、ちゃんと英語のリズムで読めてます。ネイティブの話すスピードに、ぐんぐん近づいてますよ！",
+   "src": "teacher_voice/k171.m4a",
+   "dur": 8.66
+  },
+  "K172": {
+   "t": "takadai",
+   "r": 4,
+   "m": "pb_drill_reps",
+   "text": "1分感情スピーチ、過去最高の回数です！これだけ口を動かしたら、英語の筋肉がしっかりついてきてます。本番で堂々と話せる日、もうすぐですよ！",
+   "src": "teacher_voice/k172.m4a",
+   "dur": 10.9
+  },
+  "K173": {
+   "t": "takadai",
+   "r": 4,
+   "m": "draw",
+   "text": "今日の練習、本当によかったです！発音も、リズムも、気持ちの乗せ方も、全部が一段上がってます。正直、聞いていて僕もテンションが上がりました！",
+   "src": "teacher_voice/k173.m4a",
+   "dur": 8.91
+  },
+  "K174": {
+   "t": "takadai",
+   "r": 4,
+   "m": "draw",
+   "text": "いやー、今日はすごかったですね！言葉に詰まらずに、自分の言いたいことを最後まで話せてました。日々の積み重ねが、しっかり英語力につながってますよ！",
+   "src": "teacher_voice/k174.m4a",
+   "dur": 8.36
+  },
+  "K175": {
+   "t": "takadai",
+   "r": 4,
+   "m": "draw",
+   "text": "今日の英語、本当に自然でした！もう「勉強してる英語」じゃなくて「使ってる英語」になってます。ここまで来たの、本当に素晴らしいです！",
+   "src": "teacher_voice/k175.m4a",
+   "dur": 7.6
+  },
+  "K176": {
+   "t": "takadai",
+   "r": 4,
+   "m": "draw",
+   "text": "ちょっと聞いてください。今日の練習、最初の頃と比べたら別人ですよ！自信を持って話してる感じが、ちゃんと伝わってきます。You did a great job!",
+   "src": "teacher_voice/k176.m4a",
+   "dur": 10.38
+  },
+  "K177": {
+   "t": "takadai",
+   "r": 4,
+   "m": "draw",
+   "text": "今日は120点です！伝えたいことが伝わるだけじゃなくて、気持ちまでしっかり乗ってました。こういう英語が話せると、相手の心が動くんです！",
+   "src": "teacher_voice/k177.m4a",
+   "dur": 9.7
+  },
+  "K178": {
+   "t": "takadai",
+   "r": 4,
+   "m": "draw",
+   "text": "本当に上手になりましたね！一つひとつの練習を丁寧にやってきたから、ここまで来られたんだと思います。僕も嬉しいです！",
+   "src": "teacher_voice/k178.m4a",
+   "dur": 7.72
+  },
+  "K179": {
+   "t": "takadai",
+   "r": 4,
+   "m": "draw",
+   "text": "今日の英語、海外の人が聞いても、ちゃんと伝わりますよ。それって、すごいことなんです。自分の英語に、もっと自信を持ってください！",
+   "src": "teacher_voice/k179.m4a",
+   "dur": 7.98
+  },
+  "K180": {
+   "t": "takadai",
+   "r": 4,
+   "m": "draw",
+   "text": "今日の練習で、成長をはっきり感じました！文法も、発音も、話す流れも、全部よくなってます。積み重ねって本当に裏切らないですね！",
+   "src": "teacher_voice/k180.m4a",
+   "dur": 9.26
+  },
+  "K181": {
+   "t": "takadai",
+   "r": 4,
+   "m": "draw",
+   "text": "今日、すごくいい表情で話せてたんじゃないですか？声だけでも楽しそうなのが伝わってきました。英語を楽しめてる、それが一番強いんです！",
+   "src": "teacher_voice/k181.m4a",
+   "dur": 8.52
+  },
+  "K182": {
+   "t": "takadai",
+   "r": 4,
+   "m": "draw",
+   "text": "Amazing! 今日の練習、本当によかったです。この英語で、海外の人と話してる姿がもう想像できます。その日まで、一緒にいきましょう！",
+   "src": "teacher_voice/k182.m4a",
+   "dur": 9.0
+  },
+  "K183": {
+   "t": "takadai",
+   "r": 4,
+   "m": "month_goal",
+   "text": "今月の目標、達成です！一か月コツコツ積み上げて、決めたゴールにちゃんとたどり着きましたね。来月の自分は、さらに上にいますよ！",
+   "src": "teacher_voice/k183.m4a",
+   "dur": 8.44
+  },
+  "K184": {
+   "t": "takadai",
+   "r": 4,
+   "m": "month_goal",
+   "text": "月の目標、クリアおめでとうございます！一か月やりきったこの経験は、英語だけじゃなく、何をやるときにも自信になりますよ！",
+   "src": "teacher_voice/k184.m4a",
+   "dur": 8.18
+  },
+  "K185": {
+   "t": "takadai",
+   "r": 4,
+   "m": "hours_10",
+   "text": "練習時間、合計10時間を突破しました！10時間分、英語を口にしてきたんです。これはもう、ちゃんと力になってますよ。本当にすごいです！",
+   "src": "teacher_voice/k185.m4a",
+   "dur": 9.64
+  },
+  "K186": {
+   "t": "takadai",
+   "r": 4,
+   "m": "hours_30",
+   "text": "累計の練習時間、30時間を超えましたね！ここまでの一つひとつの練習が、全部今のあなたの英語をつくってます。最高です！",
+   "src": "teacher_voice/k186.m4a",
+   "dur": 8.9
+  },
+  "K187": {
+   "t": "takadai",
+   "r": 4,
+   "m": "pb_double",
+   "text": "今日は自己ベストが二つも出ましたね！ここまで一気に伸びるのは、ちゃんと基礎が積み上がってきた証拠です。最高の一日でした！",
+   "src": "teacher_voice/k187.m4a",
+   "dur": 7.62
+  },
+  "K188": {
+   "t": "takadai",
+   "r": 4,
+   "m": "week_full",
+   "text": "今週は毎日、全部やりきりましたね！ここまで丁寧にやれる人は本当に少ないです。この一週間の自分を、思いっきり褒めてあげてください！",
+   "src": "teacher_voice/k188.m4a",
+   "dur": 8.33
+  },
+  "K189": {
+   "t": "takadai",
+   "r": 5,
+   "m": "streak_100",
+   "text": "100日連続、本当におめでとうございます！100日間、毎日英語と向き合ってきたんですね。ここまで来られる人は、本当にひとにぎりです。最初の一日を始めたあなたも、今日まで続けたあなたも、僕は心から尊敬します。これからも一緒に、英語を楽しんでいきましょう！",
+   "src": "teacher_voice/k189.m4a",
+   "dur": 17.8
+  },
+  "K190": {
+   "t": "takadai",
+   "r": 5,
+   "m": "streak_100",
+   "text": "100日連続達成です！いやー、本当にすごい。100日前の自分に、今の英語を聞かせてあげたいですね。きっとびっくりすると思います。積み重ねは裏切らない、それを証明してくれてありがとうございます！",
+   "src": "teacher_voice/k190.m4a",
+   "dur": 13.9
+  },
+  "K191": {
+   "t": "takadai",
+   "r": 5,
+   "m": "hidden_en",
+   "text": "Hi, this is Kodai. I just want to say, I'm really proud of you. You've been practicing every day, and I can hear the difference. Your English is getting better and better. Keep going, and enjoy every step. You can do it!",
+   "src": "teacher_voice/k191.m4a",
+   "dur": 16.0
+  },
+  "K192": {
+   "t": "takadai",
+   "r": 5,
+   "m": "practice_100",
+   "text": "今日で練習100回目です！100回、英語を口にしてきたんですね。1回目のときの緊張、覚えてますか？今はもう、こんなに自然に話せてます。100回分の勇気に、拍手です！",
+   "src": "teacher_voice/k192.m4a",
+   "dur": 13.14
+  },
+  "K193": {
+   "t": "takadai",
+   "r": 5,
+   "m": "year_1",
+   "text": "練習をはじめて一年が経ちました。この一年、本当によく頑張りましたね。うまくいかない日も、忙しい日もあったと思います。それでも英語を続けてきたあなたは、もう一年前とは別人です。これからも、ずっと応援してます！",
+   "src": "teacher_voice/k193.m4a",
+   "dur": 15.3
+  },
+  "K194": {
+   "t": "takadai",
+   "r": 5,
+   "m": "hidden_story",
+   "text": "ここだけの話なんですけど、僕も英語を始めたばかりの頃は、全然話せなかったんです。言いたいことが出てこなくて、悔しい思いもたくさんしました。でも、毎日少しずつ続けたら、ちゃんと話せるようになりました。だから、あなたも絶対に大丈夫です！",
+   "src": "teacher_voice/k194.m4a",
+   "dur": 15.8
+  },
+  "K195": {
+   "t": "takadai",
+   "r": 5,
+   "m": "complete",
+   "text": "KODAI先生のボイス、全部集めてくれたんですね！ここまで練習を続けてくれたこと、本当に嬉しいです。全部のボイスを聞いてくれたあなたに、最後にもう一度。本当に、よく頑張りました。これからも、ずっと味方です！",
+   "src": "teacher_voice/k195.m4a",
+   "dur": 13.47
+  },
+  "K196": {
+   "t": "takadai",
+   "r": 5,
+   "m": "newyear",
+   "text": "明けましておめでとうございます！新しい年の最初に、英語の練習をしてくれたんですね。今年は、あなたが英語で世界とつながる一年にしましょう。今年もよろしくお願いします！",
+   "src": "teacher_voice/k196.m4a",
+   "dur": 11.88
+  },
+  "K197": {
+   "t": "takadai",
+   "r": 5,
+   "m": "nye",
+   "text": "今年最後の練習、お疲れさまでした！この一年、英語と向き合い続けたあなたは、本当にかっこいいです。来年はもっと話せるようになりますよ。良いお年を！",
+   "src": "teacher_voice/k197.m4a",
+   "dur": 10.17
+  },
+  "K198": {
+   "t": "takadai",
+   "r": 5,
+   "m": "hidden_dawn",
+   "text": "こんな朝早くから練習してるんですか！？いやー、すごい。誰も見てない時間に積み上げてる努力が、一番の力になるんです。このボイスを引き当てたあなたは、本当にラッキーですよ！",
+   "src": "teacher_voice/k198.m4a",
+   "dur": 11.91
+  },
+  "K199": {
+   "t": "takadai",
+   "r": 5,
+   "m": "pb_all6",
+   "text": "6つの自己ベスト、全部を更新しましたね！応答の速さも、会話の長さも、日記も、音読も、スピーチも、練習時間も。全部で成長してるってことは、英語力が丸ごと上がってるってことです。本当に、本当に素晴らしいです！",
+   "src": "teacher_voice/k199.m4a",
+   "dur": 18.45
+  },
+  "K200": {
+   "t": "takadai",
+   "r": 5,
+   "m": "hidden_special",
+   "text": "今日は特別なボイスです。いつも練習してくれて、本当にありがとうございます。あなたが毎日積み重ねてる姿、ちゃんと届いてます。英語を話せるようになったあなたと、いつか海外で乾杯できる日を楽しみにしてます！",
+   "src": "teacher_voice/k200.m4a",
+   "dur": 15.83
+  },
+  "Y001": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "ナイスアクション！",
+   "src": "teacher_voice/y001.m4a",
+   "dur": 0.97
+  },
+  "Y002": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "最高です！",
+   "src": "teacher_voice/y002.m4a",
+   "dur": 1.29
+  },
+  "Y003": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "さすがすぎる！",
+   "src": "teacher_voice/y003.m4a",
+   "dur": 1.43
+  },
+  "Y004": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "ナイス継続です！",
+   "src": "teacher_voice/y004.m4a",
+   "dur": 1.43
+  },
+  "Y005": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "やりましたね！",
+   "src": "teacher_voice/y005.m4a",
+   "dur": 1.42
+  },
+  "Y006": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "行動力、ナイスです！",
+   "src": "teacher_voice/y006.m4a",
+   "dur": 1.8
+  },
+  "Y007": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "今日も動けてて最高！",
+   "src": "teacher_voice/y007.m4a",
+   "dur": 2.16
+  },
+  "Y008": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "ナイス行動！",
+   "src": "teacher_voice/y008.m4a",
+   "dur": 1.75
+  },
+  "Y009": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "いいスタートです！",
+   "src": "teacher_voice/y009.m4a",
+   "dur": 1.37
+  },
+  "Y010": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "その一歩が最高です！",
+   "src": "teacher_voice/y010.m4a",
+   "dur": 1.99
+  },
+  "Y011": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "今日も止まらない！最高ですね！",
+   "src": "teacher_voice/y011.m4a",
+   "dur": 2.9
+  },
+  "Y012": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "今日もやり切りましたね！",
+   "src": "teacher_voice/y012.m4a",
+   "dur": 1.82
+  },
+  "Y013": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "いやー、覚悟を感じますねー！",
+   "src": "teacher_voice/y013.m4a",
+   "dur": 2.34
+  },
+  "Y014": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "今日もすごいな！",
+   "src": "teacher_voice/y014.m4a",
+   "dur": 1.65
+  },
+  "Y015": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "めちゃくちゃいい感じです！",
+   "src": "teacher_voice/y015.m4a",
+   "dur": 2.57
+  },
+  "Y016": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "勢いが素晴らしい！",
+   "src": "teacher_voice/y016.m4a",
+   "dur": 1.81
+  },
+  "Y017": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "Great actionですね！",
+   "src": "teacher_voice/y017.m4a",
+   "dur": 1.65
+  },
+  "Y018": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "おお！ナイス！",
+   "src": "teacher_voice/y018.m4a",
+   "dur": 1.53
+  },
+  "Y019": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "今日もやるじゃないですか！最高！",
+   "src": "teacher_voice/y019.m4a",
+   "dur": 2.62
+  },
+  "Y020": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "今日も一歩前進しましたね！",
+   "src": "teacher_voice/y020.m4a",
+   "dur": 1.79
+  },
+  "Y021": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "Fantastic job!",
+   "src": "teacher_voice/y021.m4a",
+   "dur": 1.37
+  },
+  "Y022": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "その行動があなたの資産になります！",
+   "src": "teacher_voice/y022.m4a",
+   "dur": 3.3
+  },
+  "Y023": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "素晴らしい！",
+   "src": "teacher_voice/y023.m4a",
+   "dur": 0.83
+  },
+  "Y024": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "ナイス積み上げ！",
+   "src": "teacher_voice/y024.m4a",
+   "dur": 1.2
+  },
+  "Y025": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "これはもう、さすがとしか言いようがない！",
+   "src": "teacher_voice/y025.m4a",
+   "dur": 2.53
+  },
+  "Y026": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "今日も最高な一日にしていきましょう！",
+   "src": "teacher_voice/y026.m4a",
+   "dur": 2.13
+  },
+  "Y027": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "今日も輝いてますね！",
+   "src": "teacher_voice/y027.m4a",
+   "dur": 1.87
+  },
+  "Y028": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "ナイス集中力！",
+   "src": "teacher_voice/y028.m4a",
+   "dur": 1.29
+  },
+  "Y029": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "勢い、出てきましたね！",
+   "src": "teacher_voice/y029.m4a",
+   "dur": 1.83
+  },
+  "Y030": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "流れ、来てますよ！",
+   "src": "teacher_voice/y030.m4a",
+   "dur": 1.7
+  },
+  "Y031": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "行動あるのみ！ナイスです！",
+   "src": "teacher_voice/y031.m4a",
+   "dur": 2.13
+  },
+  "Y032": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "Great job!",
+   "src": "teacher_voice/y032.m4a",
+   "dur": 1.01
+  },
+  "Y033": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "その姿勢が最高です！",
+   "src": "teacher_voice/y033.m4a",
+   "dur": 2.08
+  },
+  "Y034": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "よし！今日も達成！",
+   "src": "teacher_voice/y034.m4a",
+   "dur": 1.95
+  },
+  "Y035": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "動いた人が勝ちますからね！",
+   "src": "teacher_voice/y035.m4a",
+   "dur": 1.86
+  },
+  "Y036": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "Nice action!",
+   "src": "teacher_voice/y036.m4a",
+   "dur": 1.0
+  },
+  "Y037": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "今日もちゃんとやりきりましたね！素晴らしい！",
+   "src": "teacher_voice/y037.m4a",
+   "dur": 3.1
+  },
+  "Y038": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "習慣化できてますねー！",
+   "src": "teacher_voice/y038.m4a",
+   "dur": 1.8
+  },
+  "Y039": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "もはや、見てて気持ちいいですね！",
+   "src": "teacher_voice/y039.m4a",
+   "dur": 2.1
+  },
+  "Y040": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "いいリズムが作れてる！",
+   "src": "teacher_voice/y040.m4a",
+   "dur": 2.01
+  },
+  "Y041": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "その調子でガンガンいきましょう！",
+   "src": "teacher_voice/y041.m4a",
+   "dur": 2.31
+  },
+  "Y042": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "本当に、それをやり続けるだけ！",
+   "src": "teacher_voice/y042.m4a",
+   "dur": 2.59
+  },
+  "Y043": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "やりきり力、ありますねー！",
+   "src": "teacher_voice/y043.m4a",
+   "dur": 2.23
+  },
+  "Y044": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "最高！",
+   "src": "teacher_voice/y044.m4a",
+   "dur": 0.92
+  },
+  "Y045": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "You're on fire!",
+   "src": "teacher_voice/y045.m4a",
+   "dur": 1.64
+  },
+  "Y046": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "Awesome!",
+   "src": "teacher_voice/y046.m4a",
+   "dur": 0.73
+  },
+  "Y047": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "さすがですね！",
+   "src": "teacher_voice/y047.m4a",
+   "dur": 1.43
+  },
+  "Y048": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "今日の分も、しっかり積み上がりました！",
+   "src": "teacher_voice/y048.m4a",
+   "dur": 2.5
+  },
+  "Y049": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "コミット力が素晴らしい！",
+   "src": "teacher_voice/y049.m4a",
+   "dur": 1.79
+  },
+  "Y050": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "毎日動けてるのが素晴らしい！",
+   "src": "teacher_voice/y050.m4a",
+   "dur": 2.29
+  },
+  "Y051": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "これは強いぞー！",
+   "src": "teacher_voice/y051.m4a",
+   "dur": 1.81
+  },
+  "Y052": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "継続力。これだけあれば、どこまでだっていけます！",
+   "src": "teacher_voice/y052.m4a",
+   "dur": 4.1
+  },
+  "Y053": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "やりきって、いい顔してそうですね！",
+   "src": "teacher_voice/y053.m4a",
+   "dur": 2.46
+  },
+  "Y054": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "あなたの努力、ちゃんと見てますよ！",
+   "src": "teacher_voice/y054.m4a",
+   "dur": 2.85
+  },
+  "Y055": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "小さくても、ちゃんと前進。最高です！",
+   "src": "teacher_voice/y055.m4a",
+   "dur": 3.1
+  },
+  "Y056": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "迷わずにやりきれてるのがナイスです！",
+   "src": "teacher_voice/y056.m4a",
+   "dur": 2.75
+  },
+  "Y057": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "Let's go!",
+   "src": "teacher_voice/y057.m4a",
+   "dur": 1.09
+  },
+  "Y058": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "はい、今日もやりきって自分に勝ちました！",
+   "src": "teacher_voice/y058.m4a",
+   "dur": 2.89
+  },
+  "Y059": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "着実にきてますね！",
+   "src": "teacher_voice/y059.m4a",
+   "dur": 1.68
+  },
+  "Y060": {
+   "t": "yusuke",
+   "r": 1,
+   "m": "draw",
+   "text": "その勢いのまま、明日もいきましょう！",
+   "src": "teacher_voice/y060.m4a",
+   "dur": 2.57
+  },
+  "Y061": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "今日もちゃんと行動できてますね！この積み重ねが、そのまま実績になります！",
+   "src": "teacher_voice/y061.m4a",
+   "dur": 4.9
+  },
+  "Y062": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "やるって決めてやれる人、本当に強いです！ナイスアクション！",
+   "src": "teacher_voice/y062.m4a",
+   "dur": 4.7
+  },
+  "Y063": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "忙しい中でも時間を作れているのが最高ですね！それが一番難しいところなんで！",
+   "src": "teacher_voice/y063.m4a",
+   "dur": 5.7
+  },
+  "Y064": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "今日の行動、めちゃくちゃいいです！やりっぱなしにせず、明日につなげていきましょう！",
+   "src": "teacher_voice/y064.m4a",
+   "dur": 6.0
+  },
+  "Y065": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "一回一回の挑戦が、自分の資産になっていきます。今日もナイスでした！",
+   "src": "teacher_voice/y065.m4a",
+   "dur": 5.0
+  },
+  "Y066": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "いい感じに走れてますね！この勢いのまま、ガンガンいきましょう！",
+   "src": "teacher_voice/y066.m4a",
+   "dur": 4.4
+  },
+  "Y067": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "迷ったらまず動く。今日もそれができてて最高です！",
+   "src": "teacher_voice/y067.m4a",
+   "dur": 4.4
+  },
+  "Y068": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "小さくても毎日動いてる人が、最後に一番遠くまで行きます！ナイスです！",
+   "src": "teacher_voice/y068.m4a",
+   "dur": 5.9
+  },
+  "Y069": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "今日のあなたの努力も、ちゃんと見てますよ。本当に素晴らしい！",
+   "src": "teacher_voice/y069.m4a",
+   "dur": 4.1
+  },
+  "Y070": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "こんなふうに行動できている自分を、ちゃんと褒めてあげてくださいね。素晴らしい！",
+   "src": "teacher_voice/y070.m4a",
+   "dur": 4.6
+  },
+  "Y071": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "英語で世界とつながる準備が、ちゃんと進んでますよ。ナイス！",
+   "src": "teacher_voice/y071.m4a",
+   "dur": 4.2
+  },
+  "Y072": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "やりきった後の気持ちよさ、ありますよね。その感覚、大事にしていきましょう！",
+   "src": "teacher_voice/y072.m4a",
+   "dur": 4.8
+  },
+  "Y073": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "自分との約束を守れてるの、素晴らしいです！それが自信になります！",
+   "src": "teacher_voice/y073.m4a",
+   "dur": 5.2
+  },
+  "Y074": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "今日も挑戦できましたね！挑戦した数だけ、ちゃんとあなたのできることは増えてます！",
+   "src": "teacher_voice/y074.m4a",
+   "dur": 5.8
+  },
+  "Y075": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "いやー、ナイスですね！その行動力を、みんなにもシェアしてほしい！",
+   "src": "teacher_voice/y075.m4a",
+   "dur": 4.3
+  },
+  "Y076": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "その積み重ねは、絶対にあなたを裏切らないですからね。今日も行動できて最高です！",
+   "src": "teacher_voice/y076.m4a",
+   "dur": 6.3
+  },
+  "Y077": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "英語を話すたびに、使える武器が一つずつ増えてますよ！",
+   "src": "teacher_voice/y077.m4a",
+   "dur": 4.0
+  },
+  "Y078": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "「やる」が当たり前になってきてますね！それ、めちゃくちゃ強いです！",
+   "src": "teacher_voice/y078.m4a",
+   "dur": 4.6
+  },
+  "Y079": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "今日きついなって日も、ちゃんとやれた。これが自信につながっていきます！",
+   "src": "teacher_voice/y079.m4a",
+   "dur": 4.9
+  },
+  "Y080": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "Great job! 世界に向けての準備、今日も一歩進みましたね！",
+   "src": "teacher_voice/y080.m4a",
+   "dur": 4.9
+  },
+  "Y081": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "今日の練習で、また経験値が積み上がりました！レベル上がってますよ！",
+   "src": "teacher_voice/y081.m4a",
+   "dur": 5.3
+  },
+  "Y082": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "動けてる人には、ちゃんとチャンスが回ってきます！ナイスアクション！",
+   "src": "teacher_voice/y082.m4a",
+   "dur": 4.0
+  },
+  "Y083": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "一日もやめなかったのが素晴らしいです！続ける人が、最終的に到達しますから！",
+   "src": "teacher_voice/y083.m4a",
+   "dur": 6.4
+  },
+  "Y084": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "いいですね！この調子でいったら、半年後の景色が全然違いますよ！",
+   "src": "teacher_voice/y084.m4a",
+   "dur": 5.3
+  },
+  "Y085": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "morning",
+   "text": "朝から動けてるの最高です！朝を制する人は、その日を制しますから！",
+   "src": "teacher_voice/y085.m4a",
+   "dur": 5.6
+  },
+  "Y086": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "morning",
+   "text": "朝一の行動、ナイスです！今日はもう勝ちが確定しました。おめでとうございます！",
+   "src": "teacher_voice/y086.m4a",
+   "dur": 5.2
+  },
+  "Y087": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "morning",
+   "text": "おはようございます！朝からやりきるの、さすがですね！",
+   "src": "teacher_voice/y087.m4a",
+   "dur": 3.5
+  },
+  "Y088": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "night",
+   "text": "一日の最後までやりきりましたね！ナイス根性！そして、しっかり休んでください！",
+   "src": "teacher_voice/y088.m4a",
+   "dur": 5.6
+  },
+  "Y089": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "night",
+   "text": "夜でもやる、その覚悟が最高なんですよ。今日もお疲れさまでした！",
+   "src": "teacher_voice/y089.m4a",
+   "dur": 6.0
+  },
+  "Y090": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "night",
+   "text": "遅い時間までお疲れさまでした！やりきりましたね！",
+   "src": "teacher_voice/y090.m4a",
+   "dur": 3.5
+  },
+  "Y091": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "weekend",
+   "text": "休みの日でも行動できる人、本当に強いです。毎週毎週、差がつきます！",
+   "src": "teacher_voice/y091.m4a",
+   "dur": 5.7
+  },
+  "Y092": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "weekend",
+   "text": "週末も止まらない！ナイスです！来週もガンガンいきましょう！",
+   "src": "teacher_voice/y092.m4a",
+   "dur": 4.5
+  },
+  "Y093": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "streak_3",
+   "text": "3日連続、ナイスです！ここから習慣に変わっていきますよ！",
+   "src": "teacher_voice/y093.m4a",
+   "dur": 4.3
+  },
+  "Y094": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "streak_3",
+   "text": "3日続いたなら、もう流れはできてます！このままいきましょう！",
+   "src": "teacher_voice/y094.m4a",
+   "dur": 4.1
+  },
+  "Y095": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "first_diary",
+   "text": "英語日記スタート、最高です！自分の毎日を英語にできたら、もう話すネタには困りませんよ！",
+   "src": "teacher_voice/y095.m4a",
+   "dur": 6.2
+  },
+  "Y096": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "first_diary",
+   "text": "はじめての英語日記、ナイスです！振り返っていくことで、自分の行動がどんどん資産になっていきます！",
+   "src": "teacher_voice/y096.m4a",
+   "dur": 6.6
+  },
+  "Y097": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "first_read",
+   "text": "音読、はじめての挑戦ナイスです！まずはやってみる、それが最高ですね！",
+   "src": "teacher_voice/y097.m4a",
+   "dur": 5.3
+  },
+  "Y098": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "first_drill",
+   "text": "感情スピーキング、初挑戦ナイスです！気持ちが乗った英語は、もうそれだけで相手の心を動かします！",
+   "src": "teacher_voice/y098.m4a",
+   "dur": 7.0
+  },
+  "Y099": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "pb_any",
+   "text": "自己ベスト更新、おめでとうございます！自分の記録を自分で塗り替えるの、最高です！",
+   "src": "teacher_voice/y099.m4a",
+   "dur": 7.0
+  },
+  "Y100": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "pb_any",
+   "text": "記録更新ナイスです！過去の自分に、ちゃんと勝ちましたね！",
+   "src": "teacher_voice/y100.m4a",
+   "dur": 4.3
+  },
+  "Y101": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "pb_react_fast",
+   "text": "2秒応答、速くなってますね！とっさに出る英語、ここのスピードに英語力と瞬発力がかかってきますから。最高です！",
+   "src": "teacher_voice/y101.m4a",
+   "dur": 9.8
+  },
+  "Y102": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "pb_talk_long",
+   "text": "AI会話、長く続けられましたね！会話を止めない力、これめっちゃ大事です！",
+   "src": "teacher_voice/y102.m4a",
+   "dur": 6.2
+  },
+  "Y103": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "pb_diary_words",
+   "text": "日記の語数、増えてますね！アウトプットの量が増えている。これ最高です！",
+   "src": "teacher_voice/y103.m4a",
+   "dur": 6.1
+  },
+  "Y104": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "pb_week_minutes",
+   "text": "今週の練習時間、記録更新！時間をつくれる人は何でもできます！",
+   "src": "teacher_voice/y104.m4a",
+   "dur": 5.3
+  },
+  "Y105": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "pb_read_wpm",
+   "text": "音読のスピード、上がってますね！積み重ねがちゃんと数字に出てます！",
+   "src": "teacher_voice/y105.m4a",
+   "dur": 5.7
+  },
+  "Y106": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "pb_drill_reps",
+   "text": "1分スピーチの回数更新！やった回数は裏切りません！",
+   "src": "teacher_voice/y106.m4a",
+   "dur": 5.0
+  },
+  "Y107": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "back",
+   "text": "おかえりなさい！また戻ってきてくれて嬉しいです！ここから再スタートを切っていきましょう！",
+   "src": "teacher_voice/y107.m4a",
+   "dur": 6.2
+  },
+  "Y108": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "back",
+   "text": "久しぶりの一歩、待ってましたよ。止まってもまた動ける人、これが強いんですよ！",
+   "src": "teacher_voice/y108.m4a",
+   "dur": 6.6
+  },
+  "Y109": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "used_phrase",
+   "text": "教材の表現、使いこなしてますね！覚えたものをすぐに実戦で使えるの、さすがすぎます！",
+   "src": "teacher_voice/y109.m4a",
+   "dur": 6.6
+  },
+  "Y110": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "share_up",
+   "text": "自分から話す量、増えてますね！その積極性、実際の会話でもめっちゃ生きます！",
+   "src": "teacher_voice/y110.m4a",
+   "dur": 5.9
+  },
+  "Y111": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "相手に合わせて返せてるのがナイスすぎますね！それがコミュニケーションの本質です！",
+   "src": "teacher_voice/y111.m4a",
+   "dur": 5.53
+  },
+  "Y112": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "今日の行動、ちゃんと明日の自分を助けてくれますよ！ナイスでした！",
+   "src": "teacher_voice/y112.m4a",
+   "dur": 4.9
+  },
+  "Y113": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "楽しんでやれてるのが伝わってきますね。楽しめる人が一番伸びます。なぜなら、努力は夢中に勝てないからですね！",
+   "src": "teacher_voice/y113.m4a",
+   "dur": 8.7
+  },
+  "Y114": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "一個一個、着実にクリアしてますね！めちゃくちゃいい流れです！",
+   "src": "teacher_voice/y114.m4a",
+   "dur": 5.1
+  },
+  "Y115": {
+   "t": "yusuke",
+   "r": 2,
+   "m": "draw",
+   "text": "今日もお疲れさまでした！明日もまた一緒にやっていきましょう！",
+   "src": "teacher_voice/y115.m4a",
+   "dur": 4.3
+  },
+  "Y116": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "pb_react_fast",
+   "text": "自己ベスト更新、おめでとうございます！とっさに英語が出てくる力は、海外の相手と話すときにめちゃくちゃ効きます。どんどん実戦向きになってますね！",
+   "src": "teacher_voice/y116.m4a",
+   "dur": 10.2
+  },
+  "Y117": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "pb_react_fast",
+   "text": "また記録更新じゃないですか！最高です！考える前に口が動く。これは積み重ねでしか手に入らない力です。ナイス！",
+   "src": "teacher_voice/y117.m4a",
+   "dur": 9.5
+  },
+  "Y118": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "pb_talk_long",
+   "text": "AI会話、自己ベストの長さです！会話を止めずに続けられるのは、相手に興味を持てている証拠です。そのまま海外の人とも話せますよ！",
+   "src": "teacher_voice/y118.m4a",
+   "dur": 11.6
+  },
+  "Y119": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "pb_talk_long",
+   "text": "会話の時間、記録更新ですね！長く話せるってことは、伝えたいことがそれだけある、そして意見がまとまってるってことです。最高！",
+   "src": "teacher_voice/y119.m4a",
+   "dur": 10.2
+  },
+  "Y120": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "pb_diary_words",
+   "text": "日記の語数、自己ベスト更新です！アウトプットの量が増えると、自分の考えもどんどん整理されていきます。めちゃくちゃいい流れです！",
+   "src": "teacher_voice/y120.m4a",
+   "dur": 10.5
+  },
+  "Y121": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "pb_diary_words",
+   "text": "日記、どんどん長くなってますね！振り返りを言葉にできる人は、行動の質が上がっていく傾向にあります。今、いいとこ来てますよ！",
+   "src": "teacher_voice/y121.m4a",
+   "dur": 9.8
+  },
+  "Y122": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "pb_week_minutes",
+   "text": "1週間の練習時間、自己ベストです！忙しい中で時間を作れる人は、どんな目標でも達成できます。本当に素晴らしい！",
+   "src": "teacher_voice/y122.m4a",
+   "dur": 9.6
+  },
+  "Y123": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "pb_week_minutes",
+   "text": "今週の練習時間、記録更新ですね！やった量は絶対に裏切りません。この一週間の行動、最高でした！",
+   "src": "teacher_voice/y123.m4a",
+   "dur": 8.8
+  },
+  "Y124": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "pb_read_wpm",
+   "text": "いいですね！自己ベスト更新です！数字で成長が見えるのって、めちゃくちゃ気持ちいいですよね。積み重ねが結果に出てますよ！",
+   "src": "teacher_voice/y124.m4a",
+   "dur": 9.9
+  },
+  "Y125": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "pb_read_wpm",
+   "text": "英語のスピード、また上がりましたね！地道な練習を続けられる人が、一番伸びるんです。ナイス！",
+   "src": "teacher_voice/y125.m4a",
+   "dur": 8.0
+  },
+  "Y126": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "pb_drill_reps",
+   "text": "1分感情スピーチ、回数の自己ベストです！回数をこなした人だけが、本番で堂々と話せるようになります。ナイス積み上げ！",
+   "src": "teacher_voice/y126.m4a",
+   "dur": 10.4
+  },
+  "Y127": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "pb_drill_reps",
+   "text": "スピーチの回数、記録更新！とにかく量をやる、その姿勢がめちゃくちゃいいです。止まらないですね！",
+   "src": "teacher_voice/y127.m4a",
+   "dur": 8.5
+  },
+  "Y128": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "streak_7",
+   "text": "7日連続達成、おめでとうございます！一週間毎日動けたのは、本当にすごいことです。もう流れはできてますよ！",
+   "src": "teacher_voice/y128.m4a",
+   "dur": 9.5
+  },
+  "Y129": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "streak_7",
+   "text": "7日連続、ナイスです！続けると決めて続けられる、その力が全部の土台になります。最高です！",
+   "src": "teacher_voice/y129.m4a",
+   "dur": 8.9
+  },
+  "Y130": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "streak_7",
+   "text": "一週間、一日も止めませんでしたね！この7日間で積み上げたものは、ちゃんと自分の資産になってますよ！",
+   "src": "teacher_voice/y130.m4a",
+   "dur": 8.6
+  },
+  "Y131": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "streak_14",
+   "text": "14日連続です！2週間止めずに続けるって、覚悟がないとできないです。ナイスすぎます！",
+   "src": "teacher_voice/y131.m4a",
+   "dur": 7.9
+  },
+  "Y132": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "streak_14",
+   "text": "2週間、毎日行動できましたね！ここまで来たら、もう止まる理由がないですね。（笑）このままいきましょう！",
+   "src": "teacher_voice/y132.m4a",
+   "dur": 6.8
+  },
+  "Y133": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "streak_21",
+   "text": "21日連続、おめでとうございます！人が習慣化するのに必要な21日間を突破しましたね！もう毎日やるのが当たり前になってきたんじゃないですか？",
+   "src": "teacher_voice/y133.m4a",
+   "dur": 12.2
+  },
+  "Y134": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "streak_21",
+   "text": "21日間、やりきりましたね！ここからは習慣が自分を引っぱってくれます。最高のスタートダッシュ切れてますよ！",
+   "src": "teacher_voice/y134.m4a",
+   "dur": 9.4
+  },
+  "Y135": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "first_talk",
+   "text": "はじめてのAI会話、ナイスチャレンジです！最初の一歩を踏み出せる人は、その先もちゃんと進んでいけます。最高のスタートです！",
+   "src": "teacher_voice/y135.m4a",
+   "dur": 9.5
+  },
+  "Y136": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "first_talk",
+   "text": "AI会話デビュー、おめでとうございます！AIってわかってても、最初は緊張しますよね。でも、ここでもう一歩踏み出せたから、世界が広がっていきますよ！",
+   "src": "teacher_voice/y136.m4a",
+   "dur": 11.2
+  },
+  "Y137": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "first_talk",
+   "text": "はじめての英会話、やりましたね！0を1にする瞬間って、一番エネルギーがいるんですよ。でも、もう一歩踏み出した。ここからは止まりません！",
+   "src": "teacher_voice/y137.m4a",
+   "dur": 10.5
+  },
+  "Y138": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "back",
+   "text": "おかえりなさい！止まってもまた動き出せたのが最高です。完璧じゃなくていいので、今日からまた積み上げていきましょう！",
+   "src": "teacher_voice/y138.m4a",
+   "dur": 9.7
+  },
+  "Y139": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "back",
+   "text": "久しぶりの行動、ナイスです！忙しい時期もありますよね、わかる！それでも戻ってこれる人は、必ず最終的に結果を出せます。ここからです！",
+   "src": "teacher_voice/y139.m4a",
+   "dur": 12.3
+  },
+  "Y140": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "back",
+   "text": "また戻ってこれましたね！ここで戻ってこれたのが、もう最高です！ここから少しずつペースを戻していきましょう！",
+   "src": "teacher_voice/y140.m4a",
+   "dur": 9.5
+  },
+  "Y141": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "draw",
+   "text": "今日の行動、めちゃくちゃいいです！やると決めたことを淡々とやれる人が、最後は一番遠くまで行けます。素晴らしい！",
+   "src": "teacher_voice/y141.m4a",
+   "dur": 9.6
+  },
+  "Y142": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "draw",
+   "text": "英語で話す練習を続けてるのって、未来の自分へのプレゼントなんですよね。今日もいいプレゼントができましたね！",
+   "src": "teacher_voice/y142.m4a",
+   "dur": 8.0
+  },
+  "Y143": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "draw",
+   "text": "今日もやり切りましたね！こういう毎日の小さな行動が、ある日いきなり大きな成果になって返ってきます。楽しみにしててください！",
+   "src": "teacher_voice/y143.m4a",
+   "dur": 9.7
+  },
+  "Y144": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "draw",
+   "text": "挑戦を避けずに向かっていけるのが素晴らしいです！その姿勢があれば、英語も仕事も必ず伸びていきます！",
+   "src": "teacher_voice/y144.m4a",
+   "dur": 8.6
+  },
+  "Y145": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "draw",
+   "text": "いやー、今日もナイスでした！続ける人にしか見えない景色が、この先で待ってます。僕もそこで待ってます。一緒に行きましょう！",
+   "src": "teacher_voice/y145.m4a",
+   "dur": 9.7
+  },
+  "Y146": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "draw",
+   "text": "英語で自分の想いを伝えられる人は、世界中どこでも仲間が作れます。今日もその力が磨かれました。おめでとうございます！",
+   "src": "teacher_voice/y146.m4a",
+   "dur": 9.5
+  },
+  "Y147": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "draw",
+   "text": "ちゃんと時間をつくって、ちゃんとやる。当たり前に見えて一番難しいことを、今日もやれてます。さすがです！",
+   "src": "teacher_voice/y147.m4a",
+   "dur": 8.8
+  },
+  "Y148": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "draw",
+   "text": "行動した分だけ、自信が積み上がっていきます。今日の自分にも、ちゃんと自信をプレゼントしてあげてくださいね！",
+   "src": "teacher_voice/y148.m4a",
+   "dur": 8.0
+  },
+  "Y149": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "draw",
+   "text": "迷いながらでも手を止めないのがナイスです！試行錯誤してる時間こそ、一番成長してる時間ですから！",
+   "src": "teacher_voice/y149.m4a",
+   "dur": 8.1
+  },
+  "Y150": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "draw",
+   "text": "今日の練習も、ちゃんと明日につながってます。やりっぱなしにしないで、気づいたことを一つだけ覚えておきましょう！",
+   "src": "teacher_voice/y150.m4a",
+   "dur": 7.6
+  },
+  "Y151": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "draw",
+   "text": "自分の殻を破れてますね！最初は緊張してたことも、気づいたら普通にできるようになっている。これが量と時間のすごさです！",
+   "src": "teacher_voice/y151.m4a",
+   "dur": 9.7
+  },
+  "Y152": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "draw",
+   "text": "英語を使って獲得したい未来。その未来に向かって、ちゃんと進めてますね。今日もナイスアクションです！",
+   "src": "teacher_voice/y152.m4a",
+   "dur": 7.7
+  },
+  "Y153": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "draw",
+   "text": "こうやってコツコツやれる人が、チャンスが来た瞬間につかめる人なんです。準備、着実に進んでますよ！",
+   "src": "teacher_voice/y153.m4a",
+   "dur": 8.0
+  },
+  "Y154": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "draw",
+   "text": "今日もやれた自分、最高じゃないですか！その「やれた」の積み重ねが、そのまま自信になっていきます！",
+   "src": "teacher_voice/y154.m4a",
+   "dur": 7.9
+  },
+  "Y155": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "draw",
+   "text": "ナイスアクション！今日の練習で、世界にまた一歩近づきました。この調子でガンガンいきましょう！",
+   "src": "teacher_voice/y155.m4a",
+   "dur": 6.9
+  },
+  "Y156": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "week_goal",
+   "text": "今週の目標、達成です！決めたことをやり切れる人は、どんな目標も叶えられます。最高の一週間でしたね！",
+   "src": "teacher_voice/y156.m4a",
+   "dur": 8.7
+  },
+  "Y157": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "week_goal",
+   "text": "1週間の目標クリア、おめでとうございます！やると決めてやりきる。それを毎週続けられたら、もう無敵です！",
+   "src": "teacher_voice/y157.m4a",
+   "dur": 9.2
+  },
+  "Y158": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "week_goal",
+   "text": "今週もやり切りましたね！目標を立てて、行動して、達成する。この流れが完全にできてきてますよ！",
+   "src": "teacher_voice/y158.m4a",
+   "dur": 7.9
+  },
+  "Y159": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "share_up",
+   "text": "話す割合、上がってますね！自分から話しに行けるのは、相手にGIVEができてる証拠です。めちゃくちゃいい！",
+   "src": "teacher_voice/y159.m4a",
+   "dur": 7.8
+  },
+  "Y160": {
+   "t": "yusuke",
+   "r": 3,
+   "m": "share_up",
+   "text": "今日は自分からガンガン話せましたね！その積極性が、海外の人と話すときに一番の武器になります！",
+   "src": "teacher_voice/y160.m4a",
+   "dur": 8.2
+  },
+  "Y161": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "streak_30",
+   "text": "30日間連続達成、素晴らしい！1か月間、一日もやめずに行動し続けたって、本当にすごいことですよ。もう完全に、やれる人の側に立ってます。ちょっと最後かみました。最高です！",
+   "src": "teacher_voice/y161.m4a",
+   "dur": 15.0
+  },
+  "Y162": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "streak_30",
+   "text": "30日間連続、おめでとうございます！いやー、やりましたね！この1か月間の積み重ねは、これから先どんな挑戦をするときも、自分を支えてくれる自信になります。素晴らしい！",
+   "src": "teacher_voice/y162.m4a",
+   "dur": 13.4
+  },
+  "Y163": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "streak_30",
+   "text": "1か月間、毎日やりきりましたね！続けると決めて、本当に続けた。その事実が、もう何よりの実績です。胸を張ってほしい！最高！",
+   "src": "teacher_voice/y163.m4a",
+   "dur": 11.2
+  },
+  "Y164": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "streak_50",
+   "text": "50日間連続です！ここまで来ると、もう周りの人にも影響を与えられるレベルです。その継続力、ぜひ学び・気づきの共有部屋でもシェアしてほしい！仲間にも「ここまで来たぞ」とシェアしてほしい！",
+   "src": "teacher_voice/y164.m4a",
+   "dur": 14.2
+  },
+  "Y165": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "streak_50",
+   "text": "50日連続、おめでとうございます！50日止まらなかった人は、もう何をやってもうまくいきます。本当に、さすがすぎます！",
+   "src": "teacher_voice/y165.m4a",
+   "dur": 9.2
+  },
+  "Y166": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "streak_50",
+   "text": "50日間、一日も欠かさずにやりきりましたね。ここまでの行動量は、間違いなく結果に、そして自分の経験値につながっていきます。もうここまで来たら、100日いきましょう！",
+   "src": "teacher_voice/y166.m4a",
+   "dur": 13.1
+  },
+  "Y167": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "pb_react_fast",
+   "text": "すごい！過去最高の速さです！とっさに英語が出てくるって、海外の相手と話すときの最強の武器になります。もう実戦で戦えるレベルまで来てますよ！",
+   "src": "teacher_voice/y167.m4a",
+   "dur": 11.7
+  },
+  "Y168": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "pb_talk_long",
+   "text": "おおー！AI会話、過去最長です！ここまで話し続けられたら、海外の人とも普通に会話で盛り上がることができます。やってきたことが、ちゃんと形になってきてますね！",
+   "src": "teacher_voice/y168.m4a",
+   "dur": 13.1
+  },
+  "Y169": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "pb_diary_words",
+   "text": "日記の語数、過去最高です！これだけアウトプットできるのは、毎日ちゃんと自分と向き合って、自分が話したい英語のことを考えている証拠です。素晴らしい！",
+   "src": "teacher_voice/y169.m4a",
+   "dur": 12.0
+  },
+  "Y170": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "pb_week_minutes",
+   "text": "今週の練習時間、過去最高です！この時間を作るために、きっといろいろ工夫したんだと思います。その工夫ができる人は、ちゃんと自分の人生の目標に到達できますから。素晴らしいです！",
+   "src": "teacher_voice/y170.m4a",
+   "dur": 14.0
+  },
+  "Y171": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "pb_read_wpm",
+   "text": "話すスピードが過去最高なんですけど、すごい！続けてきたからこそ出せた数字ですね。この成長、もうみんなにシェアしてください。「こんなになったよ」って！",
+   "src": "teacher_voice/y171.m4a",
+   "dur": 12.3
+  },
+  "Y172": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "pb_drill_reps",
+   "text": "1分スピーチ、過去最高の回数です！量をやり切る力、圧倒的ですね。これだけやった人は、本番で絶対に強いです！",
+   "src": "teacher_voice/y172.m4a",
+   "dur": 10.0
+  },
+  "Y173": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "draw",
+   "text": "今日の行動、めちゃくちゃ最高です！ここまで本気で取り組める人って、本当に少ないんですよ。その姿勢があれば、どんな目標でも絶対に届きます！",
+   "src": "teacher_voice/y173.m4a",
+   "dur": 10.5
+  },
+  "Y174": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "draw",
+   "text": "いやー、今日もナイスすぎます！こうやって毎日積み上げていく姿、本当に素敵です。その姿勢とその行動力があれば、絶対に成果が出せる。一緒にやっていきましょう！",
+   "src": "teacher_voice/y174.m4a",
+   "dur": 13.8
+  },
+  "Y175": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "draw",
+   "text": "今日の一歩は、未来の大きな結果につながってます。英語で世界に提案できる日、確実に近づいてますよ。本当に最高です！",
+   "src": "teacher_voice/y175.m4a",
+   "dur": 9.8
+  },
+  "Y176": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "draw",
+   "text": "おおおお！今日のあなた、めちゃくちゃいい感じです！行動して、振り返って、また行動する。このサイクルが回ってる人は、もう止められないです！",
+   "src": "teacher_voice/y176.m4a",
+   "dur": 10.3
+  },
+  "Y177": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "draw",
+   "text": "今日の練習、最高でした！最初の頃と比べて、動きのスピードも、迷いのなさも全然違います。どんどんレベル上がってますよ！",
+   "src": "teacher_voice/y177.m4a",
+   "dur": 8.6
+  },
+  "Y178": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "draw",
+   "text": "ここまで続けてきたこと、本当に素晴らしいです！その積み重ねは、誰にも奪えない自分だけの資産です。自信を持って、次に進みましょう！",
+   "src": "teacher_voice/y178.m4a",
+   "dur": 10.9
+  },
+  "Y179": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "draw",
+   "text": "正直、ここまでやりきれる人はなかなかいないです！今日の行動、ほかのメンバーにも見せたいぐらい。最高です！",
+   "src": "teacher_voice/y179.m4a",
+   "dur": 8.8
+  },
+  "Y180": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "draw",
+   "text": "今日もナイスアクション！英語ができるようになると、出会える人も、できる仕事も、行ける場所も全部変わります。その未来に向かって、ちゃんと進んでますよ！",
+   "src": "teacher_voice/y180.m4a",
+   "dur": 10.6
+  },
+  "Y181": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "draw",
+   "text": "いやー、本当に強いですね！やると決めたらやる、その覚悟が今日の行動からも伝わってきました。この調子で、ガンガン領域を広げていきましょう！",
+   "src": "teacher_voice/y181.m4a",
+   "dur": 12.5
+  },
+  "Y182": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "draw",
+   "text": "Fantastic! 今日の練習、最高でした。こうやって積み上げてきたものが、ある日いきなり花開きます。「こんなに話せるの？」「あれ、英語聞こえるんですけど？」ってなってきます。その調子でいきましょう！",
+   "src": "teacher_voice/y182.m4a",
+   "dur": 13.9
+  },
+  "Y183": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "month_goal",
+   "text": "今月の目標、達成です！1か月走り切って、決めたゴールにちゃんと届きましたね。この達成感をちゃんと大事にして、次の月の原動力にしていきましょう！",
+   "src": "teacher_voice/y183.m4a",
+   "dur": 13.3
+  },
+  "Y184": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "month_goal",
+   "text": "月の目標クリア、おめでとうございます！目標を決めて、やり切る。この経験を積み重ねられる人が、本当に成果を出せる人です！",
+   "src": "teacher_voice/y184.m4a",
+   "dur": 11.4
+  },
+  "Y185": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "hours_10",
+   "text": "練習時間、合計10時間突破です！10時間分の行動を積み上げたって、本当すごいですよ！この行動量は、間違いなくあなたの成果につながってきます！",
+   "src": "teacher_voice/y185.m4a",
+   "dur": 13.5
+  },
+  "Y186": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "hours_30",
+   "text": "累計の練習時間、30時間を超えましたね！ここまでの行動量は、もう立派な実績です。この数字、ぜひ自分の自信にしてください！",
+   "src": "teacher_voice/y186.m4a",
+   "dur": 11.6
+  },
+  "Y187": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "pb_double",
+   "text": "自己ベスト、ダブル更新です！一気に二つ伸びるのは、行動量がぐっと増えた証拠です。この勢い、止めずにいきましょう！",
+   "src": "teacher_voice/y187.m4a",
+   "dur": 9.2
+  },
+  "Y188": {
+   "t": "yusuke",
+   "r": 4,
+   "m": "week_full",
+   "text": "今週、毎日全部やりきりましたね！ここまで徹底できるのは、本当に覚悟がある人だけです。この1週間、そしてあなた、最高でした！",
+   "src": "teacher_voice/y188.m4a",
+   "dur": 11.1
+  },
+  "Y189": {
+   "t": "yusuke",
+   "r": 5,
+   "m": "streak_100",
+   "text": "100日連続、本当におめでとうございます！100日間、一日も止めずに行動し続けた。これは、もう誰にも真似できない実績です。ここまでやり切ったあなたなら、英語でも、仕事でも、どんな挑戦でも必ず結果を出せます。本当に、最高です！",
+   "src": "teacher_voice/y189.m4a",
+   "dur": 18.7
+  },
+  "Y190": {
+   "t": "yusuke",
+   "r": 5,
+   "m": "streak_100",
+   "text": "おおー！100日連続ですよ！ここまで来られる人は、本当にひとにぎりです。始めた日のことを思い出してみてください。あの一歩が100日分の自信に、そして成果に変わりました。すごいです！この力で、世界に行っちゃいましょう！",
+   "src": "teacher_voice/y190.m4a",
+   "dur": 20.3
+  },
+  "Y191": {
+   "t": "yusuke",
+   "r": 5,
+   "m": "hidden_en",
+   "text": "Hey, it's Yusuke here. I just want to say, great job! You've kept going day after day, and that's amazing. Your effort will open doors to the world. Keep taking action, and let's achieve great things together!",
+   "src": "teacher_voice/y191.m4a",
+   "dur": 16.2
+  },
+  "Y192": {
+   "t": "yusuke",
+   "r": 5,
+   "m": "practice_100",
+   "text": "今日で練習100回目です！100回行動したって、とんでもないことですよ。1回目を始めた勇気と、100回目まで続けた覚悟。その両方を持ってるあなたは、本当に強いです！",
+   "src": "teacher_voice/y192.m4a",
+   "dur": 15.2
+  },
+  "Y193": {
+   "t": "yusuke",
+   "r": 5,
+   "m": "year_1",
+   "text": "練習を始めて一年が経ちましたね。この一年、本当にお疲れさまでした！忙しい日も、しんどい日もあったと思います。それでも止まらなかったあなたは、もう一年前とは全然違うステージにいます。来年も、一緒に領域展開していきましょう！",
+   "src": "teacher_voice/y193.m4a",
+   "dur": 21.1
+  },
+  "Y194": {
+   "t": "yusuke",
+   "r": 5,
+   "m": "hidden_story",
+   "text": "ここだけの話をさせてください。僕も昔は、教員免許を取った公務員志望の、ただのジャパニーズというか、自信も選択肢もない状態でした。でもここまで来れたのは、今あなたがやっているように毎日英語の練習をして、毎日世界の人たちと関われるように行動して、それを続けてきただけなんです。だからこそ、心から言いたい。あなたなら絶対にできる。行動を続けた先には、必ずたどり着きたい未来が待っています。歩みを止めないだけ。それだけで、あなたは絶対に目標を達成できます。",
+   "src": "teacher_voice/y194.m4a",
+   "dur": 47.0
+  },
+  "Y195": {
+   "t": "yusuke",
+   "r": 5,
+   "m": "complete",
+   "text": "えぇ？ ゆうすけ先生のボイス、全部集めたんですね！ここまで集めるには、相当な行動量が必要だったはず。僕もめちゃくちゃ録りました、この声を。そんなあなたの行動力こそ、あなたの一番の武器です。全部集めてくれて、本当にありがとうございます。作った甲斐がありました。最高です！",
+   "src": "teacher_voice/y195.m4a",
+   "dur": 26.3
+  },
+  "Y196": {
+   "t": "yusuke",
+   "r": 5,
+   "m": "newyear",
+   "text": "明けましておめでとうございます！新年一発目の行動が英語の練習って、最高のスタートじゃないですか！インターナショナルですね！今年は、あなたの挑戦がどんどん形になっていく、そんな1年間にしていきましょう。今年もよろしくお願いします！",
+   "src": "teacher_voice/y196.m4a",
+   "dur": 19.6
+  },
+  "Y197": {
+   "t": "yusuke",
+   "r": 5,
+   "m": "nye",
+   "text": "今年最後の練習、お疲れさまでした！この一年の行動、全部があなたの資産になってます。来年は、その資産を使ってさらに大きな挑戦をしていきましょう。良いお年を！",
+   "src": "teacher_voice/y197.m4a",
+   "dur": 16.3
+  },
+  "Y198": {
+   "t": "yusuke",
+   "r": 5,
+   "m": "hidden_midnight",
+   "text": "こんな夜遅くまで、ナイスすぎます！一日の最後まで諦めないその姿勢、本当にかっこいいなって思います。このボイスはなかなか出ないレアボイスなので、引き当てたあなたは持ってますね！しっかり休んで、また明日も最高な一日にしていきましょう！",
+   "src": "teacher_voice/y198.m4a",
+   "dur": 22.3
+  },
+  "Y199": {
+   "t": "yusuke",
+   "r": 5,
+   "m": "pb_all6",
+   "text": "6つの自己ベスト、全部を塗り替えましたね！ここまで全部の項目で伸ばせるのは、行動量が圧倒的だからです。もう完全に、成果を出す人の動き方になってます。本当に最高です！",
+   "src": "teacher_voice/y199.m4a",
+   "dur": 15.9
+  },
+  "Y200": {
+   "t": "yusuke",
+   "r": 5,
+   "m": "hidden_special",
+   "text": "今日は特別なボイスです。いつもCheers GO !で行動が続けられていて、本当に素晴らしいです。あなたの挑戦は、ほかのメンバーや僕らの勇気にもなっています。こうやって英語を使って世界とつながる日を、一緒に迎えていきましょう。あなたなら絶対にできる！",
+   "src": "teacher_voice/y200.m4a",
+   "dur": 22.9
+  }
+ },
+ "moments": {
+  "class_seat": [
+   "Y001",
+   "Y006",
+   "Y008",
+   "Y010",
+   "Y031",
+   "K011",
+   "K041",
+   "Y035"
+  ],
+  "class_attend": [
+   "K054",
+   "K023",
+   "K115",
+   "K143",
+   "K151",
+   "Y074",
+   "Y075",
+   "Y082",
+   "Y115",
+   "Y146",
+   "Y153"
+  ]
+ },
+ "milestones": {
+  "reps_10": {
+   "teacher": "yusuke",
+   "title": "感情スピーキング 今日10回",
+   "text": "10回いきましたね！口が英語の形になってきています。このまま、もう1セットいきましょう。",
+   "src": null,
+   "dur": null
+  },
+  "reps_30": {
+   "teacher": "takadai",
+   "title": "感情スピーキング 今日30回",
+   "text": "30回はすごい。プロの量です。口がもう覚えはじめていますよ。",
+   "src": null,
+   "dur": null
+  },
+  "reps_50": {
+   "teacher": "takadai",
+   "title": "感情スピーキング 今日50回",
+   "text": "50回！今日のあなたはレジェンドです。ここまで声に出した人は、本番で必ず言葉が出てきます。",
+   "src": null,
+   "dur": null
+  },
+  "reps_75": {
+   "teacher": "yusuke",
+   "title": "感情スピーキング 今日75回",
+   "text": "75回、ほんとうにかっこいい。ここまで来たら、英語が自分の言葉になっていきます。",
+   "src": null,
+   "dur": null
+  },
+  "reps_100": {
+   "teacher": "yusuke",
+   "title": "感情スピーキング 今日100回",
+   "text": "1日100回、おめでとうございます。ここまでやり切れる人は本当にひとにぎりです。誇りに思います。",
+   "src": null,
+   "dur": null
+  },
+  "reps_grad": {
+   "teacher": "takadai",
+   "title": "教材を100回で卒業",
+   "text": "この教材を100回、言い切りましたね。もうあなたの言葉です。次の言いたいことで、新しい教材をつくりましょう。",
+   "src": null,
+   "dur": null
+  }
+ }
+}

@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Cheers GO ! 機能ガイド</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light dark;
+  --navy:#1A2F66;--sky:#2F86D6;--gold:#F2B705;
+  --bg:light-dark(#F4F8FD,#0C1428);
+  --card:light-dark(#FFFFFF,#141F3A);
+  --card2:light-dark(#EAF2FB,#1A2850);
+  --ink:light-dark(#14213F,#E9EFFA);
+  --sub:light-dark(#4D5B7A,#A9B6D3);
+  --line:light-dark(#D9E3F1,#25365F);
+  --shadow:light-dark(0 10px 30px rgba(26,47,102,.10),0 10px 30px rgba(0,0,0,.35));
+  --g:max(5vw,16px);
+}
+:root[data-theme="light"]{color-scheme:light}
+:root[data-theme="dark"]{color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",system-ui,sans-serif;line-height:1.75;font-size:15px;overflow-x:hidden}
+img{max-width:100%;display:block}
+.num{font-family:Inter,"Noto Sans JP",sans-serif;font-feature-settings:"tnum"}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(var(--g),env(safe-area-inset-left));padding-right:max(var(--g),env(safe-area-inset-right))}
+
+/* BACK */
+.back{position:fixed;left:max(12px,env(safe-area-inset-left));top:max(12px,env(safe-area-inset-top));z-index:70;display:flex;align-items:center;gap:4px;padding:8px 14px 8px 10px;border-radius:999px;background:rgba(14,26,58,.82);color:#fff;text-decoration:none;font-weight:900;font-size:13px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.back svg{width:16px;height:16px}
+.hero .wrap{padding-top:72px!important}
+/* HERO */
+.hero{position:relative;background:var(--navy);color:#fff;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;background:url(img/art_cover.webp) center/cover;opacity:.28;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,47,102,.55),rgba(14,26,58,.96) 82%);z-index:-1}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:56px;padding-bottom:56px}
+.logo{height:34px;width:auto;margin-bottom:28px}
+.kicker{font-family:Inter;font-weight:800;letter-spacing:.22em;font-size:12px;color:var(--gold)}
+.hero h1{font-weight:900;font-size:clamp(30px,5.4vw,58px);line-height:1.18;margin:10px 0 18px;letter-spacing:.01em}
+.hero h1 .big{color:var(--gold);font-family:Inter;font-weight:900}
+.hero p.lead{color:#D6E2F7;font-size:15.5px;max-width:34em}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:10px 14px;min-width:92px}
+.stat b{display:block;font-family:Inter;font-weight:900;font-size:24px;line-height:1.1}
+.stat span{font-size:12px;color:#C3D2EE;font-weight:700}
+.fan{position:relative;height:440px}
+.fan .ph{position:absolute;width:200px;border-radius:30px;border:6px solid #0B1530;box-shadow:0 24px 60px rgba(0,0,0,.5);overflow:hidden;background:#0B1530}
+.fan .ph img{width:100%}
+.fan .p1{left:50%;top:10px;transform:translateX(-50%);z-index:3}
+.fan .p2{left:4%;top:60px;transform:rotate(-9deg);z-index:2;opacity:.92}
+.fan .p3{right:4%;top:60px;transform:rotate(9deg);z-index:2;opacity:.92}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;gap:12px;align-items:center;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+.tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1 1 auto;min-width:0}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{flex:0 0 auto;text-decoration:none;color:var(--ink);font-weight:900;font-size:13.5px;padding:7px 13px;border-radius:999px;background:var(--card);border:1px solid var(--line);display:flex;align-items:center;gap:7px;white-space:nowrap}
+.tabs a i{width:9px;height:9px;border-radius:50%;background:var(--c)}
+.tabs a small{font-family:Inter;font-weight:800;color:var(--sub);font-size:11.5px}
+.tools{display:flex;gap:8px;align-items:center;flex:1 1 300px;max-width:440px}
+.search{flex:1;min-width:0;position:relative}
+.search input{width:100%;font:inherit;font-size:14px;padding:8px 12px 8px 34px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:15px;height:15px;stroke:var(--sub)}
+.chip{font:inherit;font-size:12.5px;font-weight:700;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:7px 10px;cursor:pointer;white-space:nowrap}
+.chip[aria-pressed="false"]{color:var(--sub)}
+.hit{font-size:12.5px;color:var(--sub);font-weight:700;white-space:nowrap}
+
+/* LEGEND / INTRO */
+.intro{padding:40px 0 10px}
+.intro h2,.sec-h{font-weight:900;font-size:clamp(22px,3.2vw,30px);line-height:1.3}
+.legend{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:14px;color:var(--sub);font-size:13.5px}
+.legend span{display:flex;gap:6px;align-items:center}
+.pills{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+.pill{background:var(--card);border-radius:18px;padding:18px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.pill .n{font-family:Inter;font-weight:900;font-size:13px;color:var(--sky);letter-spacing:.1em}
+.pill h3{font-weight:900;font-size:17px;margin:4px 0 6px}
+.pill p{color:var(--sub);font-size:14px}
+
+/* CHAPTER */
+.ch{padding:44px 0 8px;scroll-margin-top:70px}
+.cover{position:relative;border-radius:26px;overflow:hidden;color:#fff;isolation:isolate;padding:30px 28px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;min-height:230px;background:var(--c)}
+.cover .art{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.35;z-index:-2;mix-blend-mode:luminosity}
+.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,color-mix(in srgb,var(--c) 96%,#000) 30%,color-mix(in srgb,var(--c) 40%,transparent));z-index:-1}
+.cover .word{font-family:Inter;font-weight:900;font-size:clamp(40px,8vw,88px);line-height:.9;letter-spacing:-.02em;opacity:.95}
+.cover h2{font-weight:900;font-size:clamp(22px,3.4vw,32px);margin-top:10px}
+.cover p{max-width:36em;color:rgba(255,255,255,.88);font-size:14.5px;margin-top:6px}
+.cover .cnt{text-align:right}
+.cover .cnt b{font-family:Inter;font-weight:900;font-size:48px;line-height:1;display:block}
+.cover .cnt span{font-size:12px;font-weight:700;opacity:.85}
+.body{display:grid;grid-template-columns:240px 1fr;gap:28px;margin-top:22px;align-items:start}
+.shots{position:sticky;top:76px;display:flex;flex-direction:column;gap:14px}
+.shots figure{border-radius:24px;overflow:hidden;border:5px solid #0B1530;box-shadow:var(--shadow);background:#0B1530}
+.shots figcaption{font-size:12px;color:var(--sub);text-align:center;padding:6px 0 0;background:var(--bg)}
+.grp{margin-bottom:22px}
+.grp h3{font-weight:900;font-size:16.5px;display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.grp h3::before{content:"";width:5px;height:20px;border-radius:3px;background:var(--c)}
+.grp h3 small{font-family:Inter;font-weight:800;color:var(--sub);font-size:12px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:13px 15px 14px;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--c);opacity:.7}
+.card h4{font-weight:900;font-size:14.5px;line-height:1.45;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.card p{color:var(--sub);font-size:13.5px;line-height:1.7;margin-top:4px}
+.tag{font-size:10.5px;font-weight:800;border-radius:6px;padding:1px 7px;line-height:1.7;white-space:nowrap}
+.t-w{background:light-dark(#FFF4CC,#3A3110);color:light-dark(#7A5A00,#F2CF5B)}
+.t-u{background:light-dark(#E4ECFA,#22335E);color:light-dark(#1A2F66,#A9C4F5)}
+.t-f{background:light-dark(#E2F3EE,#103A33);color:light-dark(#0D6B5E,#7FD9C6)}
+.card.hide,.grp.hide{display:none}
+.empty{display:none;color:var(--sub);padding:12px 0;font-size:14px}
+
+/* PLAN */
+.plan{padding:50px 0 10px}
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:20px;background:var(--card);border-radius:22px;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden}
+.step{padding:20px 20px 22px;position:relative}
+.step+.step{border-left:1px solid var(--line)}
+.step .n{font-family:Inter;font-weight:900;color:var(--gold);font-size:30px;line-height:1}
+.step h3{font-weight:900;font-size:17px;margin:6px 0 4px}
+.step p{color:var(--sub);font-size:13.5px}
+.tbl{margin-top:16px;background:var(--card);border-radius:18px;border:1px solid var(--line);overflow:hidden}
+.row{display:grid;grid-template-columns:150px 1fr;border-top:1px solid var(--line)}
+.row:first-child{border-top:0}
+.row>*{padding:12px 16px;font-size:14px}
+.row b{font-weight:900;background:var(--card2)}
+.row span{color:var(--sub)}
+.note{margin-top:12px;font-size:13px;color:var(--sub)}
+
+.next{padding:46px 0 16px}
+.nextbox{background:linear-gradient(135deg,var(--navy),#22448F);color:#fff;border-radius:24px;padding:26px 26px 22px;display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start}
+.nextbox .k{font-family:Inter;font-weight:900;font-size:13px;letter-spacing:.2em;color:var(--gold)}
+.nextbox h3{font-weight:900;font-size:20px;margin:4px 0 8px}
+.nextbox ul{list-style:none;display:grid;gap:8px}
+.nextbox li{background:rgba(255,255,255,.08);border-radius:12px;padding:10px 14px;font-size:14px;color:#DCE6F8}
+.nextbox li b{color:#fff;font-weight:900}
+footer{padding:34px 0 calc(48px + env(safe-area-inset-bottom));color:var(--sub);font-size:12.5px;border-top:1px solid var(--line);margin-top:40px}
+.theme{position:fixed;right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom));z-index:60;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);box-shadow:var(--shadow);cursor:pointer;display:grid;place-items:center}
+.theme svg{width:18px;height:18px}
+
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;padding-top:38px;padding-bottom:30px}
+  .fan{height:330px;max-width:420px;width:100%;margin:0 auto}
+  .fan .ph{width:150px;border-radius:24px;border-width:5px}
+  .body{grid-template-columns:1fr}
+  .shots{position:static;flex-direction:row;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}
+  .shots figure{flex:0 0 150px}
+  .pills{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  body{font-size:14.5px}
+  .cards{grid-template-columns:1fr}
+  .cover{grid-template-columns:1fr;padding:24px 20px;border-radius:22px}
+  .cover .cnt{text-align:left;display:flex;gap:8px;align-items:baseline}
+  .cover .cnt b{font-size:34px}
+  .flow{grid-template-columns:1fr}
+  .step+.step{border-left:0;border-top:1px solid var(--line)}
+  .row{grid-template-columns:1fr}
+  .row b{padding-bottom:4px}
+  .row span{padding-top:6px}
+  .nextbox{grid-template-columns:1fr;padding:22px 20px}
+  .tools{max-width:none;flex-basis:100%}
+  .fan{height:280px}
+  .fan .ph{width:128px}
+}
+</style>
+</head>
+<body>
+
+<a class="back" id="back" href="../">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>アプリにもどる</a>
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <img class="logo" src="img/logo_white.png" alt="Cheers GO !">
+      <div class="kicker">FEATURE GUIDE</div>
+      <h1>Cheers GO ! の機能、<br>ぜんぶで <span class="big num" id="total">0</span> こ。</h1>
+      <p class="lead">5つのタブと設定にある機能を、小さなボタンまでひとつずつ集めました。「これ、何ができるの？」と思ったら、ここで探してください。</p>
+      <div class="stats" id="stats"></div>
+    </div>
+    <div class="fan" aria-hidden="true">
+      <div class="ph p2"><img src="img/s_eng.webp" alt=""></div>
+      <div class="ph p3"><img src="img/s_trade.webp" alt=""></div>
+      <div class="ph p1"><img src="img/s_home.webp" alt=""></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="wrap">
+    <div class="tabs" id="tabnav"></div>
+    <div class="tools">
+      <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="q" type="search" placeholder="機能をさがす（例：通知、ポイント）" aria-label="機能をさがす"></label>
+      <button class="chip" id="wip" aria-pressed="true">準備中も表示</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="intro wrap">
+    <h2>この3つが、Cheers GO ! の柱</h2>
+    <div class="pills">
+      <div class="pill"><div class="n">01 · ENGLISH</div><h3>英語で話す</h3><p>教材、感情スピーキング、AI英会話。毎日すこしずつ、声に出して力をのばします。</p></div>
+      <div class="pill"><div class="n">02 · TRADE</div><h3>貿易で動く</h3><p>海外のお店に送る、見積もりを出す、価格表をつくる。毎日の行動を記録します。</p></div>
+      <div class="pill"><div class="n">03 · TOGETHER</div><h3>なかまとつづける</h3><p>講座の席、なかまの会、乾杯写真。ひとりにしない仕組みで、つづけられます。</p></div>
+    </div>
+    <div class="legend">
+      <span><em class="tag t-w">準備中</em>画面にはあるけれど、まだ動かないもの</span>
+    </div>
+  </section>
+
+  <div id="chapters"></div>
+  <p class="empty wrap" id="empty">見つかりませんでした。ほかの言葉でさがしてみてください。</p>
+
+  <section class="plan wrap" id="plan">
+    <h2 class="sec-h">プランごとの見え方と、とどく順番</h2>
+    <div class="flow">
+      <div class="step"><div class="n num">1</div><h3>運営に先行</h3><p>運営メンバーが先に使って、困るところを見つけます。</p></div>
+      <div class="step"><div class="n num">2</div><h3>メンバーへ</h3><p>グローバルキャリア・Pro のみなさんに広げます。</p></div>
+      <div class="step"><div class="n num">3</div><h3>全プランへ</h3><p>すべてのプランへ。遅くとも2027年から正式にスタートします。</p></div>
+    </div>
+    <div class="tbl">
+      <div class="row"><b>英語が入っているプラン</b><span>英語タブが使えます。英語の教材・AI英会話・感情スピーキングがメインです。</span></div>
+      <div class="row"><b>貿易が入っているプラン</b><span>貿易タブ（送信の記録・Matcha GO!・見積もり・価格表）が使えます。重複チェックや共有リストは貿易のあるプランだけの機能です。</span></div>
+      <div class="row"><b>全プラン共通</b><span>ホーム・みんな・マイ・設定は、だれでも使えます。講座の席、なかまの会、ポイントやレベルも共通です。</span></div>
+      <div class="row"><b>プランで変わるもの</b><span>英語が入っていないプラン（Light・貿易・貿易キャリア）では、英語タブと英語の機能（AI英会話・英語ロールプレイなど）が出ません。タイムラインにも、ほかの人の英語の練習の投稿は出ません。貿易が入っていないプランでは、貿易タブが出ません。講座の席は、自分のプランの講座の分だけ出ます。貿易・貿易キャリアのプランには、グローバル英語講座の席も出ます。</span></div>
+    </div>
+    <p class="note">アプリは、あなたのプランに合わせて見えるものを自動で切りかえます（2026年11月27日から）。</p>
+  </section>
+
+  <section class="next wrap">
+    <div class="nextbox">
+      <div class="k">COMING NEXT</div>
+      <div>
+        <h3>これから入る予定のもの</h3>
+        <ul>
+          <li><b>みんなの声を集めるしくみ</b>　ベータ版の約束ごと、1分アンケート、ひとことボタン。いまは見本だけで、アプリにはまだ入っていません。</li>
+          <li><b>準備中マークの機能</b>　上の一覧で「準備中」がついているものは、画面だけ先にあります。順番に動くようになります。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    画面はデモ用の名前（デモ ユウキさん）で写しています。中身は、2026年11月27日時点のアプリをもとにしています。<br>Cheers GO ! 機能ガイド
+  </div>
+</footer>
+
+<button class="theme" id="theme" aria-label="明るさを切りかえる"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+
+<script>
+{
+const W='w',U='u',F='f';
+const tabs=[
+{id:'home',name:'ホーム',word:'Today',color:'#1F3F8F',art:'art_plaza',shots:[['s_home','ホーム'],['s_seat','席をとったとき']],
+lead:'アプリを開いたら、まずここ。今日やることと、次の講座が一目でわかります。',
+groups:[
+{t:'あいさつと今日のこと',items:[
+['あいさつ','時間に合わせて「おはよう」などの声かけと、名前が出ます。'],
+['今週のリズム','週5日の目標に向けて、やった日に印がつきます。5日そろうと金色に。'],
+['おかえり','しばらく空いて戻ってきた人に、やさしく声をかけます。'],
+['TODAY’S MISSION','英語・貿易・なかまの3本柱が、今日どこまで進んだかを輪で見せます。'],
+['今日の1つ','いま一番やるといいことを1つだけ選んで出します。「はじめる」ですぐスタート。'],
+['今日の1つの選び方','講座の日、やり残し、時間帯などから自動で選びます。'],
+['「なぜ」カード','夜21時をすぎると、今日の行動の意味をふりかえるカードが出ます。'],
+['今日やること','今日のやることリスト。終わったものから消えていきます。'],
+['次の予定','講座やなかまの会など、次に入っている予定を出します。'],
+['1日1回のひとこと','1日1回だけ出る、先生やアプリからの短いメッセージ。'],
+]},
+{t:'講座となかまの会',items:[
+['講座の日カード','講座がある日は、ホームの上に大きく出ます。開始までのカウントダウンつき。'],
+['席をとる','講座に「出ます」と席をとれます。とると、受け方と通知が決まります。'],
+['どこで受けるか','「家でじっくり」「移動中に耳だけ」「途中から入る」から選べます。'],
+['講座のお知らせ','前日21時・1時間前・10分前に知らせます。'],
+['Googleカレンダーに追加','とった席を、そのままカレンダーに入れられます。'],
+['席を返す','行けなくなったら、席を返せます。'],
+['開催中の表示','始まる10分前から「開催中」になり、すぐ入れます。'],
+['なかまの会の日カード','なかまの会がある日は、緑のカードで知らせます。'],
+]},
+{t:'英語と目標',items:[
+['英語をのばす','今のあなたに合う英語の練習を、2枚のカードで出します。'],
+['オーダーメイド教材インタビュー','8〜12分ほど話すと、あなた専用の教材が3本できます。'],
+['今週のひろば','今週のみんなの動きや、ひろばの予定をまとめて見せます。'],
+['今月の目標バー','今月決めた目標に、どこまで近づいたかを棒で見せます。'],
+]},
+{t:'お知らせとPC',items:[
+['ベル','新しいお知らせがあると、ベルに印がつきます。'],
+['アプリアイコンのバッジ','ホーム画面のアイコンに、未読の数が出ます。'],
+['運営からのお知らせ','運営からの連絡をまとめて読める場所。',W],
+['PCの右の列','PCでは、右側に予定やランキングが並びます。'],
+['体験モード','アプリを人に見せるときのお試し表示。',U],
+]},
+]},
+
+{id:'eng',name:'英語',word:'Speak',color:'#6B4BD8',art:'art_talk',shots:[['s_eng','英語']],
+lead:'英語を「話せる」に変えるタブ。教材で練習し、感情スピーキングで回数を重ね、AIと本番の練習をします。',
+groups:[
+{t:'レベルと記録',items:[
+['MY BUSINESS ENGLISH','ビジネス英語の力をLv1〜5で見せます。それぞれの基準と、何をもとに決めたかもわかります。'],
+['5つの力','話す力を5つに分けて、五角形のグラフで見せます。'],
+['実戦の記録','本番で英語を使えた回数や中身を残します。'],
+['本番で使えた!','練習した言い回しを本番で使えたら、ボタンで記録します。'],
+['習熟の4段階','教材ごとに、どこまで身についたかを4段階で見せます。'],
+['金メダル','教材をやりこむと、4段階のメダルがもらえます。'],
+]},
+{t:'教材で練習する',items:[
+['今日の1本','今日やるといい教材を1本えらんで出します。'],
+['教材棚','あなたの教材がずらっと並ぶ棚。それぞれの点数（100点満点）つき。'],
+['教材をつくる','話すか書くかで、自分の場面の教材をつくれます。1日10本、20〜40秒。8つの場面から選べます。'],
+['語順で話す','日本語の順番ではなく、英語の順番で組み立てる練習。'],
+['シャドーイング','音声のすぐあとを追いかけて話す練習。'],
+['スピード練習','1分155語の速さで話せるように練習します。'],
+['2秒応答','聞いたら2秒で返す練習。5秒たつと次へ進みます。'],
+['再生スピード','0.5倍から2倍まで、聞く速さを変えられます。'],
+['リスニング教材','聞く力をのばすための教材。'],
+['貿易の英語','貿易の場面で使う英語を、4つのレッスンで。'],
+]},
+{t:'感情スピーキング',items:[
+['感情スピーキング','気持ちをこめて1分話す練習。7割できたら1回と数えます。'],
+['回数のはしご','5・10・15…と回数を重ね、100回で卒業。'],
+['生涯バッジ','100回、1000回、10000回…と、ずっと数えるバッジ。'],
+['6週間カレンダー','練習した日が、6週間のカレンダーに残ります。'],
+['声のアルバム','毎週の自分の声を残して、聞きくらべられます。スマホの中だけに保存。'],
+['2分だけスピーク','時間がない日も、2分だけで1回にできます。'],
+]},
+{t:'AI英会話',items:[
+['AI英会話','AIと英語で会話します。トレーニング・フリー・先生・面接の4つのモード。'],
+['相手の設定','話す相手の立場や場面を決められます。'],
+['1回10分と週の持ち時間','1回10分。週ごとに話せる時間があり、教材を練習すると5分ふえます。'],
+['ふりかえり','会話のあと、よかった点と直すとよい点をまとめます。'],
+['英対話5ステップ','会話を5つの流れで組み立てる型。'],
+['もう一回','同じ場面をもう一度やり直せます。'],
+['練習の記録','AIと話した時間や回数を残します。'],
+['AIコーチ','次にやるといい練習を提案します。'],
+['自己ベスト','一番よかった回を記録します。'],
+['アバターの顔','AIの相手に顔をつける機能。',W],
+]},
+{t:'毎日の小さな道具',items:[
+['音読チェック','音読した声を聞いて、言えていない所を教えます。'],
+['単語集','1・3・7・14・30日後に出てくる、忘れにくい単語集。'],
+['英語日記','その日のことを英語で短く書きます。'],
+['にがて回収','答えるのに2秒以上かかったものを集めて、あとで練習。'],
+['会話を録音','自分の会話を録音して聞き直せます。'],
+['わたしメモ','インタビューで話したあなたのことを、教材づくりに使います。'],
+['ながら耳トレ','家事や移動のあいだに、耳だけで練習。'],
+['集中の乾杯グラス','10・15・25分の集中タイマー。グラスがだんだん満ちます。'],
+['声の聴き比べ','前の声と今の声をならべて聞く機能。',W],
+]},
+{t:'ライブで売る',items:[
+['ライブで売る','ライブ配信で商品を英語で紹介する練習を、3ステップで。'],
+['30秒セールストーク','30秒の売りことばをつくります。「必ず」「100%」は使わないルール。'],
+['質問練習','AIの観光客からの質問に答える練習。'],
+['プロンプター','本番用の台本表示。速さ0.5〜2倍、10秒もどし・送り、文字の大きさ、日本語訳、3-2-1カウント、鏡の向き。'],
+['見本商品','練習用の見本の商品。',U],
+['月のふりかえり','1か月の練習をまとめてふりかえります。'],
+]},
+{t:'講座とイベント',items:[
+['チアーズデー','月に1回の土曜20〜23時。ポイント2倍、その日だけのスタンプ。'],
+['会員サイトの講座','会員サイトの講座を、つづきからすぐ開けます。プランによって棚が変わります。'],
+['決まった教材','講座で使う決まった教材の棚。',W],
+]},
+]},
+
+{id:'trade',name:'貿易',word:'Trade',color:'#0F8A7A',art:'art_trade',shots:[['s_trade','貿易']],
+lead:'海外のお店に毎日送る、の積み重ねを見える形に。見積もりや価格表づくりもここでできます。',
+groups:[
+{t:'毎日の送信',items:[
+['送信のダッシュボード','これまで・今月・今日の送信数と、今日の「◯/20」、連続日数。'],
+['21日間チャレンジ','21日つづけて送るチャレンジ。'],
+['4つの率','返事が来た割合などを、4つの数字で見せます。'],
+['5段階の流れ','送る→返事→見積もり…と、商談がどこまで進んだか。'],
+['グラフ','7日間（1日20通が目安）、月ごと、送り方ごとのグラフ。'],
+['今日の送り先','今日送るお店。文面をコピーして、Instagramやメールをすぐ開けます。'],
+['送信完了／あえて送らない','送ったら記録。送らなかった時は7つの理由から選びます。'],
+['3日たったら引きつぎ','3日送らずに残ったお店は、次へ引きつぎます。'],
+['シートへのリンク','記録のシートを開くリンク。',W],
+]},
+{t:'Matcha GO!',items:[
+['Matcha GO! 連携','抹茶の輸出アプリと、同じリストと記録を使います。'],
+['抹茶レベル','送るほどレベルが上がり、4000で抹茶キング。'],
+['月500通','1か月で送れる目安は500通。'],
+['3.5秒で取り消し','送信を押してから3.5秒は取り消せます。'],
+['15通ごとのひと休み','15通送るごとに、ひと休みをすすめます。'],
+['送信の分析','どの送り方が返事につながったかを見ます。'],
+['差出人の設定','送るときの名前などを決めます。'],
+]},
+{t:'お店さがしと重複チェック',items:[
+['重複チェック','Instagramのユーザー名で、新しいお店か、自分の・ほかの人のリストにあるかを確かめます。'],
+['全体共有リスト','みんなで集めたお店のリスト。地図のリンクつき。同じお店は30日たつと登録し直せます。'],
+['記録できない国','中東など、記録の対象外の国があります。'],
+['貿易プラン限定','この章の一部は、貿易プランの人だけが使えます。'],
+]},
+{t:'見積もりと価格表',items:[
+['見積もり','国・重さ・利益の割合・USドルかユーロ・送料こみかを入れると、値段が出ます。'],
+['輸出できるか','その国へ送れるかを確かめます。'],
+['価格表メーカー','卸の3段階、カフェ用の3サイズ、最大6グレードの価格表をつくれます。'],
+['画像で書き出し','1080×1350の画像で保存・コピー・共有。英語の文もコピーできます。'],
+['有効期限','14・30・60日から、価格表の期限を選べます。'],
+['輸出できる国マップ','国ごとに4つの状態と「狙い目」を地図で見せます。'],
+['調べてほしい','まだ情報のない国を、調べてもらうお願い。',W],
+]},
+{t:'道しるべ',items:[
+['貿易の道しるべ','はじめてから成約までを、7つのステップで案内します。'],
+['達成した!','ステップをクリアしたら自分で報告。',W],
+['先生リンクでの見え方','先生が見るときは、貿易の成果を隠せます。',U],
+]},
+]},
+
+{id:'minna',name:'みんな',word:'Together',color:'#E2643A',art:'art_meet',shots:[['s_tl','みんな'],['s_meet','なかまの会']],
+lead:'ひとりにしないためのタブ。投稿、なかまの会、乾杯写真、ランキングで、つづける力をもらいます。',
+groups:[
+{t:'タイムライン',items:[
+['はじめの設定','同意、20文字までのニックネーム、24種類のアイコン。'],
+['自分だけモード','人に見せずに、自分だけの記録として使えます。'],
+['4つの投稿の種類','やったこと、気づき、など目的に合わせて選びます。'],
+['5つの気分とタグ','投稿に気分とタグをつけられます。'],
+['公開範囲','だれに見せるかを選べます。'],
+['5つのリアクション','投稿に5種類の反応を送れます。'],
+['エール','用意された言葉か、40文字までの応援を送れます。'],
+['今日がんばった人','今日動いたなかまが並びます。'],
+['練習後のシェア','練習が終わったら、そのまま共有。自動で共有もできます。'],
+['学習を記録','140文字まで、1日1回の学びの記録。'],
+['シェアカード','記録をきれいなカードにして共有。'],
+['夜のまとめ通知','その日のみんなの動きを、夜にまとめて知らせます。'],
+]},
+{t:'安心して使うために',items:[
+['ミュート','見たくない人の投稿を見えなくします。'],
+['通報','4つの理由から選べます。2件の通報で投稿は隠れます。'],
+['ブロック','その人とかかわらないようにします。'],
+['自分の投稿を消す','いつでも自分の投稿を消せます。'],
+]},
+{t:'いま と ひろば',items:[
+['いま','いまアプリにいるなかまや、動いている会が見えます。'],
+['乾杯アワー','平日21〜22時。この時間はポイント2倍。'],
+['わたしの予定','自分が入る会の予定をまとめて見ます。'],
+['メンバーと会う','1対1（あいことば）や3〜4人で、話す場をつくれます。'],
+['ひろばの活動','英語ロールプレイなど、ひろばでできる活動の一覧。'],
+['30分の枠と「今すぐ」','30分ごとの枠で予約。15分以内なら「今すぐ」で集まれます。'],
+['来なかった時のルール','2回来なかった人は、しばらくグループの会だけになります。'],
+['2Dマップ','ひろばを上から見た地図。1つのテーブルに6人まで。'],
+['声で話す','録音なしで声で話せます。',W],
+['会の中で通報・ブロック','会の途中でも、通報やブロックができます。'],
+]},
+{t:'名鑑と写真',items:[
+['名鑑','名前を出している人だけの一覧。共通点や絞りこみつき。'],
+['名鑑からさそう','名鑑から、会にさそえます。'],
+['チャンネル','テーマごとに集まる場所。',W],
+['乾杯写真のモザイク','乾杯写真がずらっと並びます。国で絞れて、60枚ずつ増えます。スワイプや←→で見られます。'],
+['PHOTOカード','写真を出すとスタンプ。20個で1枚、最大100個。'],
+['乾杯した国','写真の国を集めて見せます。'],
+['わたしのアルバム','自分の乾杯写真だけを集めます。'],
+['乾杯マップ','世界地図に、乾杯の場所が並びます。'],
+['PHOTOチャレンジ','テーマに合わせて写真を出すチャレンジ。'],
+]},
+{t:'ランキングとバディ',items:[
+['今週のボス','今週いちばん動いた人。'],
+['週リーグ','15〜20人のリーグで競います。落ちることはありません。上位は+15pt・+30pt。'],
+['ランキング','ニックネーム（ローマ字）で並びます。'],
+['表彰台と今月の貢献','上位の人と、みんなを助けた人を表彰。'],
+['乾杯バディ','2人まで相棒を組めます。10けたのコードで、7日間・1回だけ使えます。'],
+['ふたりの連続','バディと一緒につづけた日数。お休みチケットは使えません。'],
+['ふたりクエスト','バディと一緒にこなすお題。'],
+['おみやげフレーズカード','バディに英語の一言を贈るカード。'],
+['Discordの動き','Discordでの活動をここに出します。',W],
+]},
+]},
+
+{id:'my',name:'マイ',word:'My Story',color:'#C99300',art:'art_quest',shots:[['s_my','マイ']],
+lead:'自分の歩みが見えるタブ。ポイント、レベル、図鑑、クエスト、予定、なかまの会の主催もここから。',
+groups:[
+{t:'わたしの記録',items:[
+['ヘッダー','名前、レベル、ポイントが一目で。'],
+['6週間ヒートマップ','動いた日ほど濃く色がつきます。'],
+['次の目標','次のレベルやバッジまで、あとどれくらいか。'],
+['4つの見方','3つの柱、ビフォーアフター、会の記録、わたしのリズム。'],
+['わたしの歩み','これまでの大きな出来事が時系列で並びます。'],
+['今月の目標','7種類から、今月の目標を選べます。'],
+['わたしメモ','自分について話したことのメモ。'],
+['はじめの1週間ガイド','はじめての人向けの7ステップ。'],
+['ポイント推移','ポイントの増え方をグラフで。'],
+]},
+{t:'ポイントとレベル',items:[
+['ポイントのルール','写真20、共有10、自己紹介10、スレッド5、コメント3、いいね1。週30ptが目標。コメントは1日10回まで。'],
+['いいね・自己紹介のポイント','ここはまだ数えていません。',W],
+['レベル','1（0pt）から10（1400pt）まで。最後はチアーズマスター。'],
+['はじめての記録','はじめてやったことを記念に残します。'],
+['バッジ','6つの種類のバッジ。'],
+['3つの輪','英語・貿易・なかまの輪がそろうと気持ちいい。'],
+['やさしい連続記録','週30ptごとにお休みチケット1枚（2枚まで）。休んでも戻れば1枚かえってきます。'],
+]},
+{t:'図鑑とクエスト',items:[
+['先生ボイス図鑑','400種類の先生の声を集めます。199でコンプリート。★1は6割、★5は0.2%。1日12回、45秒に1回。'],
+['記念のボイス','3・7・14・21・30・50・100日目に、特別な声がとどきます。'],
+['乾杯図鑑','乾杯写真で集める図鑑。'],
+['冒険のマップ','進んだぶんだけ広がる地図。'],
+['ひとりクエスト','毎週月曜に変わるお題。カフェ、言語交換、パブ、交流会。英語の一言とGoogleマップつき。'],
+['図鑑クエスト・教材クエスト','図鑑や教材にまつわるお題。'],
+['アルバム','集めたものをまとめて見ます。'],
+]},
+{t:'ごほうび',items:[
+['ごほうびショップ','ポイントで、AI英会話の+5分、先生からの一言、アイコンの枠と交換。'],
+['宝箱','ときどき出てくる宝箱。',W],
+]},
+{t:'予定となかまの会',items:[
+['講座スケジュール','講座の予定を、Googleカレンダーかカレンダーファイルに入れられます。'],
+['講座の予約','講座をここから予約。',W],
+['3つの受け方','家でじっくり・移動中に耳だけ・途中から入る。'],
+['講座の通知','前日21時・1時間前・10分前。'],
+['なかまの会をひらく','6種類、30〜120分、毎週のくり返しも。'],
+['会の公開範囲','グループかみんなか。みんな向けは運営の確認が入ります。'],
+['出席の記録','あいことばで出席。2人以上で会として数えます。'],
+['Discordのさそい文','会のさそい文を、Discord用につくります。'],
+['会の通知','前日21時と10分前に知らせます。1日3つまで。'],
+]},
+{t:'リンクとミッション',items:[
+['お役立ちリンク','MATCHAのボット、会員サイト、ポイントのため方、写真の撮り方。'],
+['Discordミッション','Discordでやるとよいことの一覧。'],
+['先生として見る','先生の目線で画面を見ます。',U],
+]},
+]},
+
+{id:'set',name:'全体・設定',word:'Settings',color:'#1A2F66',art:'art_cover',shots:[['s_bot','質問BOT']],
+lead:'アプリ全体のしくみと、設定画面。自分の情報の守り方も、ここで決められます。',
+groups:[
+{t:'はじめて開くとき',items:[
+['5つのタブ','ホーム・英語・貿易・みんな・マイ。'],
+['個人リンク','あなた専用のリンクで開きます。一度開けば、この端末が覚えます。'],
+['データの暗号化','あなたの記録は、鍵がないと読めない形で保存されます。'],
+['リンクがないとき','リンクなしで開くと、案内の画面になります。'],
+['デモ','デモの名前で中を見られるモード。'],
+['この端末から外す','この端末に覚えたリンクを消せます。'],
+['ホーム画面に追加','アプリのように、ホーム画面から開けます。'],
+['ようこそカード','はじめてのときに5枚のカードで案内します。'],
+]},
+{t:'見た目と通知',items:[
+['テーマ','自動・明るい・暗い、と好きなアクセントの色。'],
+['リマインダー','7〜22時の8つの時間から選べます。はじめは20時。ためしに通知も。'],
+['通知の種類','どの通知を受けるかを選べます。'],
+['iPhoneの通知','ホーム画面に追加して、iOS 16.4以上で届きます。'],
+['タイムラインの設定','みんなタブの見え方を決めます。'],
+]},
+{t:'わたしの情報',items:[
+['AIの同意','AIを使う機能の同意（2026年11月7日版）。'],
+['個人情報のページ','どんな情報を、何のために使うかを説明します。'],
+['私のデータ','記録のダウンロード、学びノートのAIのオン・オフ、ぜんぶ消す（2回確認）。'],
+['連絡先の注意','投稿に連絡先を書こうとすると、注意が出ます。'],
+]},
+{t:'こまったとき',items:[
+['質問BOT','3つの分野の質問に答えます。'],
+['カリキュラムの質問','カリキュラムについての質問は近日。',W],
+['戻る帯','ほかの画面から、すぐ戻れる帯。'],
+['先生リンクの帯','先生がのぞいているときに出る帯。',U],
+]},
+{t:'PCで使うとき',items:[
+['PCの画面','横幅1100px以上で、左にメニュー、2列の広い画面に。'],
+['最終更新の時間','いつ更新されたかを表示します。'],
+['BETAマーク','ベータ版であることを示す印。'],
+['プラン別の見え方','英語が入っていないプランでは英語タブ、貿易が入っていないプランでは貿易タブが出ません。講座の席は、自分のプランの講座の分だけ出ます。'],
+]},
+]},
+];
+
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const tagOf={w:'<em class="tag t-w">準備中</em>',u:'<em class="tag t-u">運営のみ</em>',f:'<em class="tag t-f">仕上げ中</em>'};
+tabs.forEach(t=>t.groups.forEach(g=>{g.items=g.items.filter(i=>i[2]!==U)}));
+let total=0;
+tabs.forEach(t=>{t.n=t.groups.reduce((a,g)=>a+g.items.length,0);total+=t.n});
+
+document.getElementById('tabnav').innerHTML=tabs.map(t=>`<a href="#${t.id}" style="--c:${t.color}"><i></i>${esc(t.name)}<small class="num">${t.n}</small></a>`).join('')+`<a href="#plan" style="--c:#F2B705"><i></i>プラン</a>`;
+document.getElementById('stats').innerHTML=tabs.map(t=>`<div class="stat"><b class="num">${t.n}</b><span>${esc(t.name)}</span></div>`).join('');
+
+document.getElementById('chapters').innerHTML=tabs.map(t=>`
+<section class="ch wrap" id="${t.id}" style="--c:${t.color}">
+  <div class="cover">
+    <div class="art" style="background-image:url(img/${t.art}.webp)"></div>
+    <div><div class="word">${esc(t.word)}</div><h2>${esc(t.name)}</h2><p>${esc(t.lead)}</p></div>
+    <div class="cnt"><b class="num">${t.n}</b><span>この章の機能</span></div>
+  </div>
+  <div class="body">
+    <div class="shots">${t.shots.map(s=>`<figure><img loading="lazy" src="img/${s[0]}.webp" alt="${esc(s[1])}の画面"><figcaption>${esc(s[1])}</figcaption></figure>`).join('')}</div>
+    <div>${t.groups.map(g=>`
+      <div class="grp"><h3>${esc(g.t)} <small class="num">${g.items.length}</small></h3>
+      <div class="cards">${g.items.map(i=>`<article class="card" data-f="${i[2]||''}" data-s="${esc((i[0]+' '+i[1]).toLowerCase())}"><h4>${esc(i[0])}${i[2]?tagOf[i[2]]:''}</h4><p>${esc(i[1])}</p></article>`).join('')}</div></div>`).join('')}
+    </div>
+  </div>
+</section>`).join('');
+
+const totalEl=document.getElementById('total');
+let k=0;const step=()=>{k=Math.min(total,k+Math.ceil(total/40));totalEl.textContent=k;if(k<total)requestAnimationFrame(step)};
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){totalEl.textContent=total}else{step()}
+
+const q=document.getElementById('q'),wip=document.getElementById('wip'),empty=document.getElementById('empty');
+let showW=true;
+function filter(){
+  const v=q.value.trim().toLowerCase();let shown=0;
+  document.querySelectorAll('.grp').forEach(g=>{
+    let n=0;
+    g.querySelectorAll('.card').forEach(c=>{
+      const ok=(!v||c.dataset.s.includes(v))&&(showW||c.dataset.f!=='w');
+      c.classList.toggle('hide',!ok);if(ok)n++;
+    });
+    g.classList.toggle('hide',n===0);shown+=n;
+  });
+  document.querySelectorAll('.ch').forEach(ch=>{ch.style.display=ch.querySelector('.grp:not(.hide)')?'':'none'});
+  empty.style.display=shown?'none':'block';
+}
+q.addEventListener('input',filter);
+wip.addEventListener('click',()=>{showW=!showW;wip.setAttribute('aria-pressed',showW);filter()});
+
+document.getElementById('back').addEventListener('click',e=>{
+  if(window.parent!==window){e.preventDefault();try{window.parent.postMessage({type:'cg-guide-close'},location.origin)}catch(x){}}
+  else if(history.length>1&&document.referrer&&new URL(document.referrer).origin===location.origin){e.preventDefault();history.back()}
+});
+const root=document.documentElement;
+try{const s=localStorage.getItem('cg-theme');if(s)root.dataset.theme=s}catch(e){}
+document.getElementById('theme').addEventListener('click',()=>{
+  const cur=root.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+  const nx=cur==='dark'?'light':'dark';root.dataset.theme=nx;
+  try{localStorage.setItem('cg-theme',nx)}catch(e){}
+});
+}
+</script>
+</body>
+</html>
